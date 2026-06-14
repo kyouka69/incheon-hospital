@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인천 부평구 병원 찾기 - 1555개 병원 목록</title>
+<meta name="description" content="인천 부평구 병원 목록 1555곳. 주소, 전화번호, 진료시간 정보 제공.">
+<link rel="canonical" href="https://kyouka69.github.io/incheon-hospital/region/부평구/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; background: #f8f9fa; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+header { background: #1a73e8; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+header .logo { font-size: 1.2rem; font-weight: 700; }
+header nav a { color: #fff; margin-left: 18px; font-size: .9rem; opacity: .9; }
+header nav a:hover { opacity: 1; }
+.hero { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: #fff; text-align: center; padding: 60px 20px 50px; }
+.hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.3; margin-bottom: 12px; }
+.hero p { font-size: 1rem; opacity: .88; margin-bottom: 28px; }
+.hero-btns a { display: inline-block; background: #fff; color: #1a73e8; font-weight: 700; border-radius: 30px; padding: 12px 28px; margin: 6px; font-size: .95rem; transition: transform .15s; }
+.hero-btns a:hover { transform: translateY(-2px); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+.section { padding: 40px 0; }
+.section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: #1a1a2e; border-left: 4px solid #1a73e8; padding-left: 12px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+.card { background: #fff; border-radius: 12px; padding: 20px 16px; box-shadow: 0 2px 8px rgba(0,0,0,.07); transition: transform .15s, box-shadow .15s; cursor: pointer; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+.card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+.card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.card p { font-size: .82rem; color: #666; line-height: 1.5; }
+.card.highlight { background: linear-gradient(135deg, #1a73e8, #1557b0); color: #fff; }
+.card.highlight p { color: rgba(255,255,255,.85); }
+.dept-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+.dept-btn { background: #fff; border-radius: 10px; padding: 14px 10px; text-align: center; font-size: .9rem; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.dept-btn:hover { background: #1a73e8; color: #fff; transform: translateY(-2px); }
+.region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.region-btn:hover { background: #e8f0fe; }
+.region-btn h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
+.region-btn p { font-size: .78rem; color: #888; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+th { background: #1a73e8; color: #fff; padding: 12px 10px; font-size: .88rem; text-align: left; }
+td { padding: 10px; font-size: .85rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f8f9ff; }
+.badge { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
+.badge.open { background: #e6f4ea; color: #137333; }
+.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 20px; }
+.breadcrumb a { color: #1a73e8; }
+.breadcrumb span { margin: 0 6px; }
+.info-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; padding: 14px 16px; font-size: .85rem; color: #664d03; margin: 20px 0; }
+footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: .82rem; margin-top: 60px; }
+footer a { color: #ccc; margin: 0 8px; }
+.count-badge { font-size: .78rem; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 8px; margin-left: 6px; font-weight: 600; }
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.5rem; }
+  .card-grid { grid-template-columns: 1fr 1fr; }
+  header nav { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/incheon-hospital/">🏥 인천 병원 찾기</a>
+  <nav>
+    <a href="/incheon-hospital/region/">지역별</a>
+    <a href="/incheon-hospital/department/">진료과목</a>
+    <a href="/incheon-hospital/sunday/">일요일진료</a>
+    <a href="/incheon-hospital/saturday/">토요일진료</a>
+    <a href="/incheon-hospital/night/">야간진료</a>
+  </nav>
+</header>
+
+<div class="container" style="padding-top:30px">
+  <div class="breadcrumb"><a href="/incheon-hospital/">홈</a><span>›</span><a href="/incheon-hospital/region/">지역별</a><span>›</span>부평구</div>
+  <div class="section">
+    <h2>인천 부평구 병원 목록 <span class="count-badge">1555개</span></h2>
+    <div class="info-box">총 1555개 병원 중 200개를 표시합니다. 진료시간은 변경될 수 있으니 방문 전 확인하세요.</div>
+    <table>
+      <thead><tr><th>병원명</th><th>진료과</th><th>주소</th><th>전화번호</th><th>토/일</th></tr></thead>
+      <tbody><tr>
+          <td><strong>가톨릭대학교인천성모병원</strong><br><span style="color:#888;font-size:.78rem">상급종합</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 동수로 56, (부평동)</td>
+          <td>032-1544-9004</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>근로복지공단인천병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 무네미로 446, (구산동)</td>
+          <td>032-500-0114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평세림병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 175,  (청천동)</td>
+          <td>032-524-0591</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세백퍼센트병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평문화로 87, 7~9층 10층 일부(1001~1005, 1007~1008)호 (부평동)</td>
+          <td>1533-1017</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인나누리의료재단나누리병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 156, (부평동)</td>
+          <td>1688-9797</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>굿케어요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 117, 1~8층 (부평동)</td>
+          <td>032-710-4358</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>백운요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 68, (십정동, K빌딩, 지하1층,지상1층(일부),지상2~8층)</td>
+          <td>032-504-0109</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>새올요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 246, 새올 요양병원 (산곡동)</td>
+          <td>032-507-3355</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>올리브요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 129, (부평동)</td>
+          <td>032-523-7771</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>재단법인 자연재단 더필잎요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 175, 지하1(일부)층, 1층~8층 (부평동)</td>
+          <td>032-521-5555</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>갈산중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 굴포로 42, (갈산동)</td>
+          <td>032-513-9303</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>꾸러기소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 동수로 125, (부개동)</td>
+          <td>032-522-8575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다시봄날의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주로 635, 엘림타워 301호 (삼산동)</td>
+          <td>032-715-6900</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동수녹십자의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 27, 201호 (부평동, 해마루)</td>
+          <td>032-525-7531</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동수성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 안남로 5, 부평DS빌딩 2, 3층 (부평동)</td>
+          <td>032-518-5511</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동안플러스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 83, 강남타워 7층 702, 703호 (부평동)</td>
+          <td>032-710-1282</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동암편한숨이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 열우물로 90, 상가 F동 3층 308호, 309호, 311호 일부호 (십정동, 더샵부평센트럴시티)</td>
+          <td>032-719-3316</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>두림메디컬의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 동수천로 132, 부개빌딩 2층 201호 (부개동)</td>
+          <td>032-361-7765</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>로로와내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평문화로 87, 5층 501~508호 (부평동)</td>
+          <td>032-521-2022</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리더스영상의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 체육관로 30, 삼산동 이리옴프라자 5층 501, 503, 504, 505호 (삼산동)</td>
+          <td>032-546-4161</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>마음고요의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 157, 4층 (부평동)</td>
+          <td>070-7576-2513</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모두탑365정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로 947, 5층 (부평동, 태성메디칼)</td>
+          <td>032-362-7800</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모두튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주로494번길 25, 3층 (청천동)</td>
+          <td>032-362-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래연합가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 영성로 34, 2층 (삼산동)</td>
+          <td>032-505-5512</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 영성로 42, 3층 (삼산동)</td>
+          <td>032-233-3355</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미앤유의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로242번길 19, 3층 (산곡동)</td>
+          <td>032-528-3600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 동수로 168-1, 2,3층 (부개동)</td>
+          <td>032-514-4867</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>베스트원성형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 체육관로 38, 세원빌딩 7층 701호 (삼산동)</td>
+          <td>032-503-1666</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평닥터에버스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 16, 9층 (부평동)</td>
+          <td>032-514-2010</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평더편한정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 평천로 302, 지하1층, 2~5층 (갈산동)</td>
+          <td>032-516-2004</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평성모안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경원대로 1373, 4층 (부평동)</td>
+          <td>032-528-7288</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평예쁨주의쁨의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 11, 4층 (부평동)</td>
+          <td>032-505-3010</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 시장로 48, 2층 204,205호 (부평동)</td>
+          <td>032-508-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>사랑의가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 동수로 25, 2층 (부평동)</td>
+          <td>032-507-3737</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주남로 124, 2층 3층 (부개동, 동성빌딩)</td>
+          <td>032-527-7300</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성장편한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 열우물로 90, 상가F동 3층 310호, 4층 403~406호 (십정동, 더샵부평센트럴시티)</td>
+          <td>032-433-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 82, 5층 일부호 (십정동)</td>
+          <td>032-512-6489</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울든든내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 83, 강남타워 6층 (부평동)</td>
+          <td>032-710-8778</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울성모이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주로494번길 26, 2층 일부호 (청천동)</td>
+          <td>032-529-8276</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울스마트신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 23, 4층 일부호 (부평동)</td>
+          <td>032-515-1175</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울아산가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부영로189번길 51, 오남프라자 507호, 508(일부)호 (산곡동)</td>
+          <td>032-719-4037</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울정형외과신경과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주로 382, 지하1층, 1층~4층 (산곡동)</td>
+          <td>032-546-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주남로 113, 2층 (부개동)</td>
+          <td>032-513-8575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>성모가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 세월천로 16, (청천동, 대우A 상가2동 212호)</td>
+          <td>032-513-1256</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>성모하와유외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평문화로 55, 와이디타워 11층 (부평동)</td>
+          <td>032-262-7475</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>수앤미산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 체육관로 34, (삼산동)</td>
+          <td>032-513-0147</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>신의의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경원대로 1355, 4층,5층 (부평동, 성우빌딩)</td>
+          <td>032-521-3336</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>에이스가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로242번길 5, (산곡동)</td>
+          <td>032-507-2140</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세꿈나무소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부영로189번길 51, 103,104-1호 (산곡동, 오남프라자)</td>
+          <td>032-519-9111</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세미여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 아트센터로 38, 십정동 센타빌딩 3층 (십정동)</td>
+          <td>032-431-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세신동정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 137, 5, 6층 (부평동)</td>
+          <td>032-517-1113</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>열린가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 일신로14번길 34, (일신동)</td>
+          <td>032-527-7599</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>영앤필의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 20, 4층 일부호 (부평동)</td>
+          <td>032-715-5252</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>예스가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부흥로 247, 3층 (부평동)</td>
+          <td>032-330-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>와이랩성형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 시장로 7, 신라저축은행빌딩 302호 (부평동)</td>
+          <td>032-503-4400</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>왕실의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로 948, 2층 201호 (부평동)</td>
+          <td>032-435-3571</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>우리가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로1104번길 23, (일신동)</td>
+          <td>032-511-6565</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>우리가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 387, 청원빌딩 2층 (산곡동)</td>
+          <td>032-529-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>우리들의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로701번길 58, (십정동)</td>
+          <td>032-438-6900</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이삭가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 수변로 43, 코스모스빌딩 3층일부, 4층 (부개동)</td>
+          <td>032-511-8020</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이상순정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 광장로 16, 6층 (부평동, 부평역사롯데마트)</td>
+          <td>032-529-0475</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>인천평화의료복지사회적협동조합평화의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로1104번길 15, 1층 (일신동)</td>
+          <td>032-524-6911</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>정드림메디컬의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부흥로 412, 3층 (부개동)</td>
+          <td>032-528-3114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>정준가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 수변로 74, (부개동)</td>
+          <td>032-506-7975</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>중앙성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 후정동로 12, (삼산동, 인천삼산벽산블루밍 상가동)</td>
+          <td>032-511-4792</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>중앙신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 314, (산곡동, 5층일부)</td>
+          <td>032-507-9800</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>중앙현대의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 원길로 34, 302호 (청천동)</td>
+          <td>032-512-8775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>참조은내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로 883, 2층 (부평동, 재현빌딩)</td>
+          <td>032-525-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>청천가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 마장로 446, 2층 (청천동)</td>
+          <td>032-521-5557</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>케이톡스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경원대로 1404, 그랑프리 빌딩 301, 311호 (부평동)</td>
+          <td>032-527-7897</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>타임의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경원대로 1405, 타임피부과빌딩 2층 (부평동)</td>
+          <td>032-518-0005</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>탁월한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 체육관로 40, 신영프라자 7층 701~703호, 8층 801~802호 (삼산동)</td>
+          <td>032-710-8575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>펠릭스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경원대로 1382, (부평동, 대한빌딩2층)</td>
+          <td>032-288-2501</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>푸른가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부일로 87, (부개동)</td>
+          <td>032-361-7600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>푸른이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평북로 446, (삼산동)</td>
+          <td>032-524-6632</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>필산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 24, (부평동)</td>
+          <td>032-528-0878</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>필승신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 평천로 402, 영통빌딩 2, 3층 (삼산동)</td>
+          <td>032-523-7585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>하이큐영상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 301, (청천동)</td>
+          <td>032-363-3292</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>한솔의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부흥로123번길 43, (산곡동)</td>
+          <td>032-511-8822</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>한튼튼재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 길주로 635, 엘림타워 401, 403호 (삼산동)</td>
+          <td>032-519-7500</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>행복플러스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 주부토로 261, 201,202호 (갈산동, 신협빌딩)</td>
+          <td>032-511-5475</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>휴의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로 21, 4층 401호 (부평동, 금남빌딩)</td>
+          <td>032-504-7553</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다나은한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 경인로999번길 1, 지하1층,지상1층일부,4층,5층 (부평동)</td>
+          <td>032-523-1075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미르한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 장제로 153, 부흥빌딩 1층일부(105호), 4층, 5층, 9층 (부평동)</td>
+          <td>032-501-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 정강의료재단 부평수한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부흥로 329, 로얄프라자 3층 전체호 (부평동)</td>
+          <td>032-503-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>찬누리한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 원적로 469, 성훈빌딩 1층 일부, 2층, 3층, 5~7층 호 (부평동)</td>
+          <td>032-511-1001</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>찬솔한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부흥로 290, 2층 일부, 3층~8층 (부평동)</td>
+          <td>032-1533-1075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>청아한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 부평구 부평대로51번길 7, 제이·원 부평메디피아 201호, 501호, 601호, 701호 (부평동)</td>
+          <td>032-527-5999</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인나누리의료재단나누리병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>결핵과</td>
+          <td>인천광역시 부평구 장제로 156, (부평동)</td>
+          <td>1688-9797</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>가톨릭대학교인천성모병원</strong><br><span style="color:#888;font-size:.78rem">상급종합</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수로 56, (부평동)</td>
+          <td>032-1544-9004</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>근로복지공단인천병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 무네미로 446, (구산동)</td>
+          <td>032-500-0114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평세림병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 175,  (청천동)</td>
+          <td>032-524-0591</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>글로리병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로 655, 1층~11층 (삼산동, 글로리타워)</td>
+          <td>032-262-9000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다인이비인후과병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1242, 지하1(일부)층, 1(일부)층, 3층, 4(일부)층, 5층, 6층, 7(일부)층 우암빌딩 (산곡동)</td>
+          <td>032-515-2325</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세백퍼센트병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 87, 7~9층 10층 일부(1001~1005, 1007~1008)호 (부평동)</td>
+          <td>1533-1017</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의)상원의료재단부평힘찬병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 78, (부평동)</td>
+          <td>032-363-9121</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인나누리의료재단나누리병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 156, (부평동)</td>
+          <td>1688-9797</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인한길의료재단한길안과병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 35, 1층일부,2층~10층 (부평동, 정명빌딩)</td>
+          <td>032-503-3322</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>굿케어요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 117, 1~8층 (부평동)</td>
+          <td>032-710-4358</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>백운요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 68, (십정동, K빌딩, 지하1층,지상1층(일부),지상2~8층)</td>
+          <td>032-504-0109</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>새올요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 246, 새올 요양병원 (산곡동)</td>
+          <td>032-507-3355</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>올리브요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 129, (부평동)</td>
+          <td>032-523-7771</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>재단법인 자연재단 더필잎요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 175, 지하1(일부)층, 1층~8층 (부평동)</td>
+          <td>032-521-5555</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>24인치의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 시장로 7, 부평 MH타워 6층 602호 일부호 (부평동)</td>
+          <td>032-502-7580</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>88하내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 320, 한화프라자 4층 406, 407호 (산곡동)</td>
+          <td>032-226-8888</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>갈산내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 주부토로 182, (갈산동)</td>
+          <td>032-516-7880</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>갈산중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 굴포로 42, (갈산동)</td>
+          <td>032-513-9303</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>경희성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 원길로 19, 2층 (청천동)</td>
+          <td>032-528-7496</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>그랑프리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1404, (부평동)</td>
+          <td>032-504-2112</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김강환내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1236, 3층 (산곡동, 선현빌딩)</td>
+          <td>032-519-3323</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김방수내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부영로 165, 109호, 213호 (산곡동, 우성아파트)</td>
+          <td>032-528-7303</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김성철내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 안남로 261, (산곡동)</td>
+          <td>032-5061-1223</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김영식소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부영로 196, (부평동)</td>
+          <td>032-513-1300</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김용덕내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 50, 2층 (십정동)</td>
+          <td>032-428-9737</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김인호내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 97, 2층 (부평동)</td>
+          <td>032-522-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김종숙정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 51, (부평동)</td>
+          <td>032-526-9203</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김태수정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1234, 7층 (산곡동, 삼주빌딩)</td>
+          <td>032-525-8700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>꾸러기소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수로 125, (부개동)</td>
+          <td>032-522-8575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>나은내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로10번길 21, 202, 203, 204(일부), 205, 206호 (부평동, 래미안부평)</td>
+          <td>032-529-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>남부정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경인로 943, (부평동)</td>
+          <td>032-501-0424</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>노광해내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 원적로 392, 305호 (산곡동, 백마타운)</td>
+          <td>032-521-6677</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>노내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 100-1, (부평동)</td>
+          <td>032-523-5244</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>누가의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 후정동로 21, (삼산동)</td>
+          <td>032-362-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다나은365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 64, 4층 401,402,407호 (십정동)</td>
+          <td>032-872-0365</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다나의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 안남로 261, 301호 (산곡동, 전방프라자)</td>
+          <td>032-330-6883</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다남메디의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 132, 2층 (부평동)</td>
+          <td>032-503-8575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동수녹십자의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 27, 201호 (부평동, 해마루)</td>
+          <td>032-525-7531</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동수성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 안남로 5, 부평DS빌딩 2, 3층 (부평동)</td>
+          <td>032-518-5511</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동신정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 113, 지하1층, 지상1~2층(부평동) (부평동)</td>
+          <td>429-3600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동암우리내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 54, 4층 (십정동)</td>
+          <td>032-421-5775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동암튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 아트센터로 40, 2층 (십정동)</td>
+          <td>032-864-5200</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>동암편한숨이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 90, 상가 F동 3층 308호, 309호, 311호 일부호 (십정동, 더샵부평센트럴시티)</td>
+          <td>032-719-3316</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>두드림신경과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로 35, 도형빌딩 3층 (부평동)</td>
+          <td>032-710-7128</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>두림메디컬의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수천로 132, 부개빌딩 2층 201호 (부개동)</td>
+          <td>032-361-7765</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>란의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 3, 3층 (부평동)</td>
+          <td>032-517-4466</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>로로와내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 87, 5층 501~508호 (부평동)</td>
+          <td>032-521-2022</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리더스영상의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 체육관로 30, 삼산동 이리옴프라자 5층 501, 503, 504, 505호 (삼산동)</td>
+          <td>032-546-4161</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리솜사랑의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 후정로 33, 근린생활시설동 2층 201~205호 (삼산동, 부평삼산 신원아침도시)</td>
+          <td>032-522-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>마루내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동암남로 4, 301호 (십정동, 리치프라자)</td>
+          <td>032-435-5600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>메디베베소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로 159, 301호 (부개동, 새롬프라자)</td>
+          <td>032-362-1171</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>명의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 176, (부평동)</td>
+          <td>032-523-7778</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모두탑365정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경인로 947, 5층 (부평동, 태성메디칼)</td>
+          <td>032-362-7800</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모두튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로494번길 25, 3층 (청천동)</td>
+          <td>032-362-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래연합가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 영성로 34, 2층 (삼산동)</td>
+          <td>032-505-5512</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 영성로 42, 3층 (삼산동)</td>
+          <td>032-233-3355</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래한솔내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 영성서로 37, 메디칼센타 301호 (삼산동)</td>
+          <td>032-503-5988</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래항맥외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 55, 603호 (부평동, 와이디타워)</td>
+          <td>032-507-7175</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미소 가득한 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부흥로304번길 38, (부평동)</td>
+          <td>032-508-2468</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미소진의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부일로 11, 2층 201호 (부평동, 아이앤비아파트)</td>
+          <td>032-525-7222</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미앤유의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로242번길 19, 3층 (산곡동)</td>
+          <td>032-528-3600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>바른길정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 75, 지하1층,지상2~5층 (십정동)</td>
+          <td>032-423-8700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>바른이비인후과소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 세월천로 42, 2층 (청천동)</td>
+          <td>032-721-7505</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수로 168-1, 2,3층 (부개동)</td>
+          <td>032-514-4867</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박상현내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부흥로365번길 3, 301호 (부평동, 유니온프라자)</td>
+          <td>032-507-0225</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1238, 2층 (산곡동)</td>
+          <td>032-526-8636</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박소영소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로 157, 303호 (부개동, 태성프라자)</td>
+          <td>032-361-1867</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박은철내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 435, (청천동)</td>
+          <td>032-528-7575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박현수정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 수변로 8, 파워프라자 2층 202,204호 (부개동)</td>
+          <td>032-507-6222</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>뱅뱅이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 67, 501호 일부호, 701호 일부호 (부평동)</td>
+          <td>032-501-8883</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부개내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부개로 9, (부개동)</td>
+          <td>032-505-0075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부개성누가의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로 158, 3층 (부개동, 부개프라자빌딩)</td>
+          <td>032-361-7772</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부개성심의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 수변로107번길 58, 인왕빌딩 2층 (부개동)</td>
+          <td>032-505-5059</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부광의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부영로 11, 3,4층 (부평동, 광현빌딩)</td>
+          <td>032-514-7214</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 9, (부평동)</td>
+          <td>032-522-7563</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평닥터스신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부흥로 351, 2층 (부평동)</td>
+          <td>032-506-3330</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평더편한정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 평천로 302, 지하1층, 2~5층 (갈산동)</td>
+          <td>032-516-2004</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평바른내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로364번길 9, 2층 217~221호 (산곡동, 부평 IPARK)</td>
+          <td>032-299-7575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평봄내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경인로 947, 402호, 403호 (부평동)</td>
+          <td>032-514-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평사랑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 338, 1, 4층 일부호 (산곡동)</td>
+          <td>032-526-0075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평삼산내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 체육관로 40, 신영프라자 901호~906호 (삼산동)</td>
+          <td>521-0075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평성모안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1373, 4층 (부평동)</td>
+          <td>032-528-7288</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평성모재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 시장로 55, 2층 (부평동)</td>
+          <td>032-523-8277</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평센트럴이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부영로189번길 51, 5층 505(일부)호, 506호 (산곡동, 오남프라자)</td>
+          <td>032-519-6373</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평아이들소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평문화로 43, 3층 (부평동, 성균빌딩)</td>
+          <td>032-521-8686</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평연세내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 경원대로 1266, 2층 (부평동)</td>
+          <td>032-529-1256</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평열린내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수북로158번길 3, 201,301호 (부평동, 원명빌딩)</td>
+          <td>032-501-0036</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평정진의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 383, 정진빌딩 2, 3층 (산곡동)</td>
+          <td>032-506-5010</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평정형외과신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 66, 1, 3층 (부평동)</td>
+          <td>032-523-3788</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 시장로 48, 2층 204,205호 (부평동)</td>
+          <td>032-508-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평탑재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 굴포로 48, 4층 (갈산동)</td>
+          <td>032-527-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평한국정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 205, 2층 (부평동)</td>
+          <td>032-514-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부평현대정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 334, (산곡동,에스코빌딩 1층일부, 2층전부)</td>
+          <td>032-521-7119</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>브라운소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 66, 해동빌딩 2층 (십정동)</td>
+          <td>032-422-1888</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>사랑의가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 동수로 25, 2층 (부평동)</td>
+          <td>032-507-3737</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>산곡정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 원적로 290, 2층 (산곡동, 산곡메디칼센타)</td>
+          <td>032-267-5600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>산곡탑정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로364번길 9, 2층 216, 222, 223, 229 ~ 232호 (산곡동, 부평 IPARK)</td>
+          <td>032-506-1030</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼산명의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 수변로 333, 207호호 (삼산동, 삼산타운)</td>
+          <td>032-515-7991</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼산연세정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 체육관로 40, 신영프라자 3층 (삼산동)</td>
+          <td>032-330-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주남로 124, 2층 3층 (부개동, 동성빌딩)</td>
+          <td>032-527-7300</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성베스트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로 643, 명윤빌딩 4층 (삼산동)</td>
+          <td>032-710-3964</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 주부토로 112, 2,3층 (부평동)</td>
+          <td>032-523-0093</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성장편한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 열우물로 90, 상가F동 3층 310호, 4층 403~406호 (십정동, 더샵부평센트럴시티)</td>
+          <td>032-433-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 마장로 82, 5층 일부호 (십정동)</td>
+          <td>032-512-6489</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>새봄이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 장제로 62, M-city 3층 301, 302호 (부평동)</td>
+          <td>032-527-7050</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울근본통내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 체육관로 24, 청호빌딩 403,404호 (삼산동)</td>
+          <td>032-502-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울드림내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부흥로 264, (부평동, 동아웰빙타운)</td>
+          <td>032-719-7123</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울든든내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 83, 강남타워 6층 (부평동)</td>
+          <td>032-710-8778</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울바른마디365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부평대로 9, 문화드림빌 201,202호 (부평동)</td>
+          <td>032-299-1234</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울성모이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 길주로494번길 26, 2층 일부호 (청천동)</td>
+          <td>032-529-8276</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울아산가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 부평구 부영로189번길 51, 오남프라자 507호, 508(일부)호 (산곡동)</td>
+          <td>032-719-4037</td>
+          <td><br></td>
+        </tr></tbody>
+    </table>
+  </div>
+</div>
+<footer>
+  <p>인천 병원 찾기 | 공공데이터 기반 병원 정보 서비스</p>
+  <p style="margin-top:8px">
+    <a href="/incheon-hospital/region/">지역별 병원</a>
+    <a href="/incheon-hospital/department/">진료과목별</a>
+    <a href="/incheon-hospital/sunday/">일요일진료</a>
+    <a href="/incheon-hospital/saturday/">토요일진료</a>
+  </p>
+  <p style="margin-top:12px">병원 데이터: 건강보험심사평가원 공공데이터 | 진료시간은 변경될 수 있으니 방문 전 확인하세요.</p>
+</footer>
+</body>
+</html>

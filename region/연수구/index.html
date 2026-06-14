@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>인천 연수구 병원 찾기 - 1071개 병원 목록</title>
+<meta name="description" content="인천 연수구 병원 목록 1071곳. 주소, 전화번호, 진료시간 정보 제공.">
+<link rel="canonical" href="https://kyouka69.github.io/incheon-hospital/region/연수구/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', sans-serif; background: #f8f9fa; color: #1a1a2e; }
+a { text-decoration: none; color: inherit; }
+header { background: #1a73e8; color: #fff; padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
+header .logo { font-size: 1.2rem; font-weight: 700; }
+header nav a { color: #fff; margin-left: 18px; font-size: .9rem; opacity: .9; }
+header nav a:hover { opacity: 1; }
+.hero { background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%); color: #fff; text-align: center; padding: 60px 20px 50px; }
+.hero h1 { font-size: 2rem; font-weight: 800; line-height: 1.3; margin-bottom: 12px; }
+.hero p { font-size: 1rem; opacity: .88; margin-bottom: 28px; }
+.hero-btns a { display: inline-block; background: #fff; color: #1a73e8; font-weight: 700; border-radius: 30px; padding: 12px 28px; margin: 6px; font-size: .95rem; transition: transform .15s; }
+.hero-btns a:hover { transform: translateY(-2px); }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+.section { padding: 40px 0; }
+.section h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: #1a1a2e; border-left: 4px solid #1a73e8; padding-left: 12px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+.card { background: #fff; border-radius: 12px; padding: 20px 16px; box-shadow: 0 2px 8px rgba(0,0,0,.07); transition: transform .15s, box-shadow .15s; cursor: pointer; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,.12); }
+.card .icon { font-size: 1.8rem; margin-bottom: 10px; }
+.card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+.card p { font-size: .82rem; color: #666; line-height: 1.5; }
+.card.highlight { background: linear-gradient(135deg, #1a73e8, #1557b0); color: #fff; }
+.card.highlight p { color: rgba(255,255,255,.85); }
+.dept-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
+.dept-btn { background: #fff; border-radius: 10px; padding: 14px 10px; text-align: center; font-size: .9rem; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.dept-btn:hover { background: #1a73e8; color: #fff; transform: translateY(-2px); }
+.region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
+.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.region-btn:hover { background: #e8f0fe; }
+.region-btn h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
+.region-btn p { font-size: .78rem; color: #888; }
+table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); }
+th { background: #1a73e8; color: #fff; padding: 12px 10px; font-size: .88rem; text-align: left; }
+td { padding: 10px; font-size: .85rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #f8f9ff; }
+.badge { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
+.badge.open { background: #e6f4ea; color: #137333; }
+.breadcrumb { font-size: .85rem; color: #888; margin-bottom: 20px; }
+.breadcrumb a { color: #1a73e8; }
+.breadcrumb span { margin: 0 6px; }
+.info-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; padding: 14px 16px; font-size: .85rem; color: #664d03; margin: 20px 0; }
+footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: .82rem; margin-top: 60px; }
+footer a { color: #ccc; margin: 0 8px; }
+.count-badge { font-size: .78rem; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 8px; margin-left: 6px; font-weight: 600; }
+@media (max-width: 600px) {
+  .hero h1 { font-size: 1.5rem; }
+  .card-grid { grid-template-columns: 1fr 1fr; }
+  header nav { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/incheon-hospital/">🏥 인천 병원 찾기</a>
+  <nav>
+    <a href="/incheon-hospital/region/">지역별</a>
+    <a href="/incheon-hospital/department/">진료과목</a>
+    <a href="/incheon-hospital/sunday/">일요일진료</a>
+    <a href="/incheon-hospital/saturday/">토요일진료</a>
+    <a href="/incheon-hospital/night/">야간진료</a>
+  </nav>
+</header>
+
+<div class="container" style="padding-top:30px">
+  <div class="breadcrumb"><a href="/incheon-hospital/">홈</a><span>›</span><a href="/incheon-hospital/region/">지역별</a><span>›</span>연수구</div>
+  <div class="section">
+    <h2>인천 연수구 병원 목록 <span class="count-badge">1071개</span></h2>
+    <div class="info-box">총 1071개 병원 중 200개를 표시합니다. 진료시간은 변경될 수 있으니 방문 전 확인하세요.</div>
+    <table>
+      <thead><tr><th>병원명</th><th>진료과</th><th>주소</th><th>전화번호</th><th>토/일</th></tr></thead>
+      <tbody><tr>
+          <td><strong>(의)나사렛의료재단 나사렛국제병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 먼우금로 98,  (동춘동)</td>
+          <td>032-899-9999</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>인천적십자병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 원인재로 263, (연수동)</td>
+          <td>032-899-4000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>청담해리슨송도병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 157-9, 3~8층 (송도동)</td>
+          <td>032-832-5488</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>로하스인천요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 벚꽃로 114, 브랫슬 7~8층 (연수동)</td>
+          <td>032-421-1288</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>인천힐병원</strong><br><span style="color:#888;font-size:.78rem">정신병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 용담로99번길 29, 2층,5층~9층 (청학동)</td>
+          <td>032-822-8875</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>고려가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 청학로 5, 3층 (청학동, 행복빌딩)</td>
+          <td>032-834-2475</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>글로벌송도의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도문화로28번길 28, 203동 210호 (송도동, 글로벌 캠퍼스푸르지오 상가)</td>
+          <td>032-295-1000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>나다움의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로 158, 송도타임스페이스 A동 2층 210,211,212호 (송도동)</td>
+          <td>070-8893-0258</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>녹색중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 선학로68번길 4, 3층 (선학동, 중앙빌딩)</td>
+          <td>032-814-2280</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다원여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 컨벤시아대로 69, 송도 밀레니엄 412호 (송도동)</td>
+          <td>032-831-1500</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>닥터에버스 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 165-17, 2층 208~215호 (송도동)</td>
+          <td>032-721-7570</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>드림의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 청능대로 210, (동춘동,스퀘어원 3층)</td>
+          <td>032-456-4330</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리턴셀의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 154, 더 제니스 2층 209호 (송도동)</td>
+          <td>032-710-7616</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>맑음플러스이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 컨벤시아대로230번길 54, 닥터플러스몰 6층 A601,602,603호 (송도동)</td>
+          <td>032-851-6622</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모아소아청소년과.가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 앵고개로264번길 30-4, 201호 (동춘동, 영남프라자)</td>
+          <td>032-818-1365</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>밀크소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 194, C동 221,222호 (송도동, 더샵 센트럴파크2)</td>
+          <td>032-473-7585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>바른나무신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 4층 401,402,403,404호 (송도동)</td>
+          <td>032-859-7300</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>벗정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로178번길 6, 8층 (송도동)</td>
+          <td>032-721-7917</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성바이오부속의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도바이오대로 300, 삼성바이오로직스 바이오프라자동 3층 일부호 (송도동)</td>
+          <td>032-455-3778</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성바이오에피스부속의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도교육로 76, 삼성바이오에피스 바이오에피스 글로벌센터 본관동 2층 일부호 (송도동)</td>
+          <td>032-728-3435</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성스마일의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 앵고개로104번길 4, 준빌딩 4층 402호 (동춘동)</td>
+          <td>032-833-4976</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>새봄가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 새말로 32, 2층 (연수동)</td>
+          <td>032-812-7585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>샘내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 인천타워대로132번길 34, 4,5층 401,402,501호 (송도동)</td>
+          <td>032-833-2021</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 새말로 31, 2층 (연수동)</td>
+          <td>032-818-2119</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울꾸러기365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 청능대로 210, 3층 (동춘동, 스퀘어원)</td>
+          <td>032-456-4375</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울아산이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 첨단대로 40, 에스파이브시티 B506, B507호 (송도동)</td>
+          <td>032-721-7531</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 비류대로433번길 3, (연수동)</td>
+          <td>032-821-7600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>센트럴웰니스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 232, E동 지상1층 171호 (송도동, 더샵센트럴파크1)</td>
+          <td>032-833-0119</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>솔이산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 독배로 35, (옥련동,IF빌딩 4층)</td>
+          <td>032-834-1118</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도과학로27번길 55, A동 305,306호 (송도동, 롯데캐슬 캠퍼스타운)</td>
+          <td>032-812-2111</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도그린소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 아트센터대로 87, 커낼워크D4 WINTER 402동 2층 216호 (송도동)</td>
+          <td>032-212-2066</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도랜시티의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 랜드마크로 68, 301동 2층 237호 (송도동, 랜드마크시티센트럴더샵)</td>
+          <td>032-831-1238</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도미래내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 해돋이로172번길 42, B.M빌딩 4층 (송도동)</td>
+          <td>032-831-2500</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도서울정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 해돋이로 167, 힐링플라자 2층 (송도동)</td>
+          <td>032-833-5510</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도스마트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 첨단대로 40, 에스파이브시티 3층 B303,B304호 (송도동)</td>
+          <td>032-821-6886</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도스포츠정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로177번길 49, 형지글로벌 패션복합센터 3동 2층 254,255,256,257,258,259호 (송도동)</td>
+          <td>032-858-6720</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도에이스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 415, 힐스테이트 송도 더테라스 판매시설동 106동 2층 204,207~211호 (송도동)</td>
+          <td>032-858-5585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도웰니스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 랜드마크로360번길 40, 304동 103~107,109,110,창고1~3호 (송도동, 송도자이크리스탈오션)</td>
+          <td>032-832-2040</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도키즈소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도문화로28번길 28, 204동 2층 4-201호, 202동 2-211호, 2-212호 (송도동, 송도글로벌캠퍼스푸르지오)</td>
+          <td>032-713-8112</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 인천타워대로 365, 301동 305~312호 (송도동, 힐스테이트 송도 더스카이)</td>
+          <td>032-719-8089</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도탑정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도국제대로 261, 231동 207,208호 (송도동, 송도 더샵 센트럴시티)</td>
+          <td>032-813-6767</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>실버라이닝의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 해돋이로 160-15, 2층 201~205호 (송도동, 더퍼스트시티송도)</td>
+          <td>032-858-8111</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>알라딘의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로 158, 송도타임스페이스 4층 A-412,413호 (송도동)</td>
+          <td>032-831-7891</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>에코이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 121, 405호 (송도동, 센타프라자)</td>
+          <td>032-851-3232</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세추의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로178번길 22, GTX센트럴 5층 501,502,502-1호 (송도동)</td>
+          <td>032-832-5775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세히어로정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 313, 송도씨워크인테라스한라 B동 4층 425~433, 435~438, C동 452호 (송도동)</td>
+          <td>032-832-3333</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수리더스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 용담로 153, 대동월드스포츠센터 2층 203호 (연수동)</td>
+          <td>032-719-9988</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수스마트안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 청능대로 103, 4층 일부호 (연수동)</td>
+          <td>032-816-1002</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수스타정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 먼우금로 208, 3층 (연수동)</td>
+          <td>032-821-2100</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>예쁨의정석의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 랜드마크로 20, 111동 2층 216,217,218,221호 (송도동, 호반써밋 송도)</td>
+          <td>032-833-5575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>오네스타의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도국제대로 157, 405호일부,406호,407호 (송도동)</td>
+          <td>032-724-8200</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>오렌지소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도문화로84번길 24, (송도동, 송도에듀포레푸르지오)</td>
+          <td>032-821-9191</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>오운의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 인천타워대로197번길 16, 3층 323,324,325호 (송도동)</td>
+          <td>1644-7427</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>올리브여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 학나래로6번길 6, 서천빌딩 (선학동)</td>
+          <td>032-813-0075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>올바른신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 앵고개로 256, 3층 301호 (동춘동, 웅지프라자)</td>
+          <td>032-819-7775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>위드앤의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 송도과학로16번길 33-1, 송도 트리플스트리트 B2층 B203a2호 (송도동)</td>
+          <td>070-4820-2444</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 루가의료재단 지안의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 263, 송도국제업무단지 C8-2블럭 업무복합시설 6,7층 (송도동)</td>
+          <td>032-830-2700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 마크로젠의료재단 진헬스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 인천타워대로132번길 34, 6,7,8층 (송도동)</td>
+          <td>032-831-3200</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이상영가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 비류대로 437, 2층 (연수동, 청보빌딩)</td>
+          <td>032-819-3636</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>제이웰의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 컨벤시아대로230번길 42, 송도아라플라자 2층 212,213호 (송도동)</td>
+          <td>032-851-9700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>톨리드정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 컨벤시아대로 165, 포스코타워-송도 7층 일부호 (송도동)</td>
+          <td>032-859-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>튼튼365정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 첨단대로 40, 에스파이브시티 B동 5층 502,503,504호 (송도동)</td>
+          <td>032-821-7888</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>파크뷰의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 하모니로 158, 송도타임스페이스 B동 6층 603,604호 (송도동)</td>
+          <td>032-710-1404</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>피어봄의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 센트럴로 160, 2층 (송도동, 송도센트럴파크푸르지오)</td>
+          <td>032-818-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>한빛이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 용담로 115, 3층 (연수동)</td>
+          <td>032-817-2888</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>현대가외의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 독배로 42, 3층 (옥련동)</td>
+          <td>032-834-6653</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>현대의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 원인재로 14, 2층 (동춘동, 무지개마을상가)</td>
+          <td>032-816-7981</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>화인마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 인천타워대로132번길 34, 라이크홈메디컬센터 1동 3층 303호 (송도동)</td>
+          <td>032-832-8875</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다나음한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 먼우금로222번길 13, 지상1~5층 (연수동)</td>
+          <td>032-813-1070</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>자양한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>가정의학과</td>
+          <td>인천광역시 연수구 신송로 154-0, 더 제니스 4층 401호 (송도동)</td>
+          <td>032-255-1000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>(의)나사렛의료재단 나사렛국제병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 98,  (동춘동)</td>
+          <td>032-899-9999</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>인천적십자병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 263, (연수동)</td>
+          <td>032-899-4000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>나래병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 청능대로 69, 나래병원 (청학동)</td>
+          <td>032-821-0033</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도우리아이병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도미래로11번길 27-0, 스마트스퀘어B동210~212호,5층</td>
+          <td>032-834-2553</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>청담해리슨송도병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 157-9, 3~8층 (송도동)</td>
+          <td>032-832-5488</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>로하스인천요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 벚꽃로 114, 브랫슬 7~8층 (연수동)</td>
+          <td>032-421-1288</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도효자병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 능허대로 235, (옥련동, 송도효자병원)</td>
+          <td>032-832-9900</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>희망찬요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 용담로 118, 지하2층~지상9층 (연수동)</td>
+          <td>032-816-2000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>PNC안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 153, 더 마란츠타워 808,809호 (송도동)</td>
+          <td>032-858-2201</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>건강한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로 266, 연수2차한양아파트 상가A동 지상1층 (동춘동)</td>
+          <td>032-715-4567</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>고려가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 청학로 5, 3층 (청학동, 행복빌딩)</td>
+          <td>032-834-2475</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>고릴라신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 청능대로 93, 이리옴프라자 5층 501호 (청학동)</td>
+          <td>032-713-5050</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>권도승정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 비류대로 208, 비류프라자 2층 201호 (옥련동)</td>
+          <td>032-834-5626</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>글로벌송도의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도문화로28번길 28, 203동 210호 (송도동, 글로벌 캠퍼스푸르지오 상가)</td>
+          <td>032-295-1000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>김진욱신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로40번길 43, 4층 (옥련동, 신송빌딩)</td>
+          <td>032-831-7800</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>꼬꼬마소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로 42, 2층 (옥련동, 해창빌딩)</td>
+          <td>032-851-4977</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>남문석내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로 161, 세종프라자 3층 302,303호 (송도동)</td>
+          <td>032-833-3322</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>녹색중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 선학로68번길 4, 3층 (선학동, 중앙빌딩)</td>
+          <td>032-814-2280</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>늘이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 415, 힐스테이트 송도 더테라스 판매시설동 2층 233,234,235,236,237호 (송도동)</td>
+          <td>032-833-3650</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>다원여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 69, 송도 밀레니엄 412호 (송도동)</td>
+          <td>032-831-1500</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>닥터김내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 용담로 11, 2층 (청학동, 시대아파트상가)</td>
+          <td>032-811-1001</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>닥터에스본정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 용담로 153, 대동월드스포츠센터 401호 (연수동)</td>
+          <td>032-710-9488</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>도담이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 312, 3층 304호 (연수동, 대림상가)</td>
+          <td>032-814-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>라베성형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 2층층 201,202,203,211호 (송도동)</td>
+          <td>032-214-0156</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리겐의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로152번길 9, 8층 (송도동)</td>
+          <td>032-221-1234</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리미트성형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로178번길 6, 3층 309,310,311호 (송도동)</td>
+          <td>032-832-0112</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>리턴셀의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 154, 더 제니스 2층 209호 (송도동)</td>
+          <td>032-710-7616</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>마음속내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로40번길 11, 401,402,403호 (옥련동, 효명프라자)</td>
+          <td>032-831-2208</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>마음정원정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 153, 더 마란츠타워 2층 201,202호 (송도동)</td>
+          <td>032-833-3950</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>맑음플러스이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로230번길 54, 닥터플러스몰 6층 A601,602,603호 (송도동)</td>
+          <td>032-851-6622</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>메디모아의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 경원대로 184, 2층 (동춘동, 이마트연수점)</td>
+          <td>032-816-1575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모두탑365정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 190, 연수프라자 806,807호 (연수동)</td>
+          <td>032-818-9988</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>모아소아청소년과.가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로264번길 30-4, 201호 (동춘동, 영남프라자)</td>
+          <td>032-818-1365</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미래제일산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 189, 501호 (청학동, 소망빌딩)</td>
+          <td>032-245-0101</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>미앤아이의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 69, 6층 608호 (송도동, 밀레니엄상가)</td>
+          <td>032-859-2345</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>밀레니엄서울내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 69, 송도 밀레니엄 4층 402호 (송도동)</td>
+          <td>032-851-1001</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>밀크소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 194, C동 221,222호 (송도동, 더샵 센트럴파크2)</td>
+          <td>032-473-7585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>바른나무신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 4층 401,402,403,404호 (송도동)</td>
+          <td>032-859-7300</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>바른이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 157, 오네스타 1층 A-118호, A-118-1호 (송도동)</td>
+          <td>032-817-2333</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>박호연의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 180, 309-313호 (연수동, 우성2차상가)</td>
+          <td>032-817-7180</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>벗이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로178번길 6, 송도중앙타워 6층 601,602,603,604호 (송도동)</td>
+          <td>032-721-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>벗정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로178번길 6, 8층 (송도동)</td>
+          <td>032-721-7917</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>부부내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로40번길 29, (옥련동)</td>
+          <td>032-831-1888</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>브이아이씨(V.I.C)365소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 157, 오네스타 4층,7층 409호,701~710호 (송도동)</td>
+          <td>032-710-1147</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성드림이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 232, E동 2층 220,221,228,229,231호 (송도동, 더샵센트럴파크1)</td>
+          <td>032-224-0365</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성스마일의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로104번길 4, 준빌딩 4층 402호 (동춘동)</td>
+          <td>032-833-4976</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>삼성연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로40번길 21, 3층 (옥련동)</td>
+          <td>032-833-8556</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>새봄가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 새말로 32, 2층 (연수동)</td>
+          <td>032-812-7585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>샘내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로132번길 34, 4,5층 401,402,501호 (송도동)</td>
+          <td>032-833-2021</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 새말로 31, 2층 (연수동)</td>
+          <td>032-818-2119</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울꾸러기365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 청능대로 210, 3층 (동춘동, 스퀘어원)</td>
+          <td>032-456-4375</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울삼성내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 5층 506호 (송도동)</td>
+          <td>032-833-1933</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울수이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 2층 212호 (송도동)</td>
+          <td>032-831-3050</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울아산이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 첨단대로 40, 에스파이브시티 B506, B507호 (송도동)</td>
+          <td>032-721-7531</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>서울정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 비류대로433번길 3, (연수동)</td>
+          <td>032-821-7600</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>성모신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 용담로 115, 파크타워 4층 402,403호 (연수동)</td>
+          <td>032-819-8274</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>성심내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 313, (연수동)</td>
+          <td>032-817-3137</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>센트럴웰니스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 232, E동 지상1층 171호 (송도동, 더샵센트럴파크1)</td>
+          <td>032-833-0119</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>솔이산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로 35, (옥련동,IF빌딩 4층)</td>
+          <td>032-834-1118</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도과학로27번길 55, A동 305,306호 (송도동, 롯데캐슬 캠퍼스타운)</td>
+          <td>032-812-2111</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도그린소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 아트센터대로 87, 커낼워크D4 WINTER 402동 2층 216호 (송도동)</td>
+          <td>032-212-2066</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로120번길 16, 201호 (송도동, 송도신도시풍림아이원 2단지 상가)</td>
+          <td>032-851-7505</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도닥터스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 165, (송도동, 홈플러스송도점 지하1층)</td>
+          <td>032-812-7338</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도랜시티의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 랜드마크로 68, 301동 2층 237호 (송도동, 랜드마크시티센트럴더샵)</td>
+          <td>032-831-1238</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도마디재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로151번길 4, 인피니티타워 4층 401,402호 (송도동)</td>
+          <td>032-721-8255</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로36번길 1, 3층 (송도동)</td>
+          <td>032-465-7588</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도맘편한소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 랜드마크로 68, 2층 204,205,207,208252,255,256,257호 (송도동, 랜드마크시티센트럴더샵)</td>
+          <td>032-851-1365</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도메이정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 157, 오네스타 6층 A-606호 (송도동)</td>
+          <td>032-815-7557</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도미래내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로172번길 42, B.M빌딩 4층 (송도동)</td>
+          <td>032-831-2500</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도베스트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 157, 오네스타 6층 601,602,603,604-1,609호 (송도동)</td>
+          <td>032-716-9797</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도브레인신경과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로151번길 4, 인피니티타워 5층 501호 (송도동)</td>
+          <td>032-710-7065</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도사랑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 아트센터대로 87, 커낼워크D4 WINTER 402동 2층 221호 (송도동)</td>
+          <td>032-867-7775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도서울정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로 167, 힐링플라자 2층 (송도동)</td>
+          <td>032-833-5510</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도센트럴내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 165, 포스코타워-송도 4층 일부호 (송도동)</td>
+          <td>032-832-0000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도센트럴이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로 168, 401호 (송도동, 혜인프라자)</td>
+          <td>032-831-9972</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도스마트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 첨단대로 40, 에스파이브시티 3층 B303,B304호 (송도동)</td>
+          <td>032-821-6886</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도스카이이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로 365, 302동 2층 216,217,218호 (송도동, 힐스테이트 송도 더스카이)</td>
+          <td>032-721-7593</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도아이비에스(IBS)내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 263, 송도국제업무단지 C8-2블럭 업무복합시설 (송도동)</td>
+          <td>070-7542-6576</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도에이스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 415, 힐스테이트 송도 더테라스 판매시설동 106동 2층 204,207~211호 (송도동)</td>
+          <td>032-858-5585</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도에이치케이(HK)의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로230번길 54, 닥터플러스몰 3층 A321,A322호 (송도동)</td>
+          <td>032-833-8833</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 122, (송도동,송도프라자 2층 201호)</td>
+          <td>032-859-0075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 165, 4층 (송도동, 동북아트레이드타워)</td>
+          <td>032-833-0000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도웰니스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 랜드마크로360번길 40, 304동 103~107,109,110,창고1~3호 (송도동, 송도자이크리스탈오션)</td>
+          <td>032-832-2040</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도이.이.주내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 153, 더 마란츠타워 801,802호 (송도동)</td>
+          <td>032-858-3114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도이든내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로197번길 16, 3층 341,342호 (송도동)</td>
+          <td>032-833-7570</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도조앤내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로152번길 9, 3층 301,302,303,304호 (송도동)</td>
+          <td>032-859-1275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도키즈소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도문화로28번길 28, 204동 2층 4-201호, 202동 2-211호, 2-212호 (송도동, 송도글로벌캠퍼스푸르지오)</td>
+          <td>032-713-8112</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로 365, 301동 305~312호 (송도동, 힐스테이트 송도 더스카이)</td>
+          <td>032-719-8089</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도탑이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로130번길 14, 송도 메디컬타워 (송도동)</td>
+          <td>032-833-5075</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도탑정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 261, 231동 207,208호 (송도동, 송도 더샵 센트럴시티)</td>
+          <td>032-813-6767</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>송도퍼스트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로 158, 송도타임스페이스 B동 4층 401,402,403,404,405호 (송도동)</td>
+          <td>032-227-0770</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>시너지내과신경과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로178번길 6, 501,502,503,504호 (송도동)</td>
+          <td>032-227-1114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>아라소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로230번길 42, 송도아라플라자 302호 (송도동)</td>
+          <td>032-834-0302</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>아이플렉스소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 81, 드림시티 3층 301호일부,302호 (송도동)</td>
+          <td>032-832-0777</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세e소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로264번길 46, 2층 (동춘동)</td>
+          <td>032-819-5700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세꾸러기소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로40번길 43, 301호 (옥련동, 신송빌딩)</td>
+          <td>032-833-7533</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 315, 204호 (연수동, 주공상가)</td>
+          <td>032-813-1291</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 비류대로 194, (옥련동)</td>
+          <td>032-834-7000</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세최선내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로125번길 7, 4층 (송도동, 이리옴프라자)</td>
+          <td>032-859-7582</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세추의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로178번길 22, GTX센트럴 5층 501,502,502-1호 (송도동)</td>
+          <td>032-832-5775</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세플러스소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 신송로 161, 송도 하이츠 2층 204호 (송도동)</td>
+          <td>032-832-8275</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연세히어로정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 313, 송도씨워크인테라스한라 B동 4층 425~433, 435~438, C동 452호 (송도동)</td>
+          <td>032-832-3333</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수리더스내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 용담로 153, 대동월드스포츠센터 2층 203호 (연수동)</td>
+          <td>032-719-9988</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수베스트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 189, 2층 (청학동, 소망글로벌)</td>
+          <td>032-817-5550</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수성심의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 88, 301,302호 (동춘동, 상산빌딩)</td>
+          <td>032-812-8258</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수스타정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 208, 3층 (연수동)</td>
+          <td>032-821-2100</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수우리내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 학나래로6번길 35, 4층 (선학동)</td>
+          <td>032-814-7746</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수이이주내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로188번길 12, 이리옴3빌딩 3층 303호 (연수동)</td>
+          <td>032-818-8114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>연수제일내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 학나래로6번길 3, 2층 (선학동)</td>
+          <td>032-813-8136</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>오렌지소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도문화로84번길 24, (송도동, 송도에듀포레푸르지오)</td>
+          <td>032-821-9191</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>옥련삼성내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 독배로 42, 해창빌딩 4~5층 (옥련동)</td>
+          <td>032-831-9554</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>온소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 해돋이로 165, 차오름 프라자 403호 (송도동)</td>
+          <td>032-833-0484</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>우리들소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로 254, (동춘동)</td>
+          <td>032-817-8666</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>우리외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 먼우금로 194, 3층 304호 (연수동, 두손메카)</td>
+          <td>032-814-9393</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>웅내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 학나래로118번길 9, 205호 (선학동, 선학프라자)</td>
+          <td>032-819-7575</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>위드앤의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도과학로16번길 33-1, 송도 트리플스트리트 B2층 B203a2호 (송도동)</td>
+          <td>070-4820-2444</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>유기수내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 원인재로 88, 307호 (동춘동, 대우삼환상가)</td>
+          <td>032-815-7991</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 루가의료재단 지안의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 센트럴로 263, 송도국제업무단지 C8-2블럭 업무복합시설 6,7층 (송도동)</td>
+          <td>032-830-2700</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 마크로젠의료재단 진헬스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로132번길 34, 6,7,8층 (송도동)</td>
+          <td>032-831-3200</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 이원의료재단 이원의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 하모니로 291, (송도동)</td>
+          <td>032-210-2270</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>의료법인 정강의료재단 JK위드미의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 컨벤시아대로 165, 6층 (송도동)</td>
+          <td>032-715-7991</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이강연유외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로246번길 10, (동춘동)</td>
+          <td>032-818-6825</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이든의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 선학로 101, 2층 (선학동, 뉴서울아파트상가)</td>
+          <td>032-815-0590</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이상대내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로 250, 연수메디칼빌딩 404,405호 (동춘동)</td>
+          <td>032-819-2342</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이상영가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 비류대로 437, 2층 (연수동, 청보빌딩)</td>
+          <td>032-819-3636</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이성문소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 청능대로 103, 3층 (연수동)</td>
+          <td>032-818-9391</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이솜이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 송도국제대로 261, 2층 210~211호 (송도동, 송도 더샵 센트럴시티)</td>
+          <td>032-818-8222</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이이주내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 앵고개로 242, 2층 (동춘동, 연수제일상가)</td>
+          <td>032-817-7114</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이정호내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 비류대로 429, 3층 (연수동, 영일빌딩)</td>
+          <td>032-815-0975</td>
+          <td><br></td>
+        </tr><tr>
+          <td><strong>이화웰봄소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td>인천광역시 연수구 인천타워대로54번길 13, 해승메디피아 2층 (송도동)</td>
+          <td>032-833-7119</td>
+          <td><br></td>
+        </tr></tbody>
+    </table>
+  </div>
+</div>
+<footer>
+  <p>인천 병원 찾기 | 공공데이터 기반 병원 정보 서비스</p>
+  <p style="margin-top:8px">
+    <a href="/incheon-hospital/region/">지역별 병원</a>
+    <a href="/incheon-hospital/department/">진료과목별</a>
+    <a href="/incheon-hospital/sunday/">일요일진료</a>
+    <a href="/incheon-hospital/saturday/">토요일진료</a>
+  </p>
+  <p style="margin-top:12px">병원 데이터: 건강보험심사평가원 공공데이터 | 진료시간은 변경될 수 있으니 방문 전 확인하세요.</p>
+</footer>
+</body>
+</html>
