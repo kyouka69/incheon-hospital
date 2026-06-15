@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>인천 서구 병원 찾기 - 1686개 병원 목록</title>
-<meta name="description" content="인천 서구 병원 목록 1686곳. 주소, 전화번호, 진료시간 정보 제공.">
+<title>인천 서구 병원 찾기 - 383개 병원 목록</title>
+<meta name="description" content="인천 서구 병원 목록 383곳. 주소, 전화번호, 진료과목 정보 제공.">
 <link rel="canonical" href="https://kyouka69.github.io/incheon-hospital/region/서구/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@ header nav a:hover { opacity: 1; }
 .dept-btn { background: #fff; border-radius: 10px; padding: 14px 10px; text-align: center; font-size: .9rem; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
 .dept-btn:hover { background: #1a73e8; color: #fff; transform: translateY(-2px); }
 .region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
-.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; display: block; }
 .region-btn:hover { background: #e8f0fe; }
 .region-btn h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
 .region-btn p { font-size: .78rem; color: #888; }
@@ -45,12 +45,23 @@ th { background: #1a73e8; color: #fff; padding: 12px 10px; font-size: .88rem; te
 td { padding: 10px; font-size: .85rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #f8f9ff; }
+.hosp-link { color: #1a73e8; font-weight: 600; }
+.hosp-link:hover { text-decoration: underline; }
 .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
 .badge.open { background: #e6f4ea; color: #137333; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 20px; }
 .breadcrumb a { color: #1a73e8; }
 .breadcrumb span { margin: 0 6px; }
 .info-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; padding: 14px 16px; font-size: .85rem; color: #664d03; margin: 20px 0; }
+.detail-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.09); padding: 28px; margin-bottom: 20px; }
+.detail-card h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.detail-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+.detail-info-item label { font-size: .78rem; color: #888; display: block; margin-bottom: 4px; }
+.detail-info-item span { font-size: .95rem; font-weight: 600; }
+.map-wrap { width: 100%; height: 300px; border-radius: 12px; overflow: hidden; background: #e8f0fe; margin-top: 20px; display: flex; align-items: center; justify-content: center; }
+.dept-tag { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 4px 12px; font-size: .82rem; font-weight: 600; margin: 3px; }
+.tel-btn { display: inline-block; background: #1a73e8; color: #fff; border-radius: 30px; padding: 10px 24px; font-weight: 700; font-size: .95rem; margin-top: 12px; }
+.tel-btn:hover { background: #1557b0; }
 footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: .82rem; margin-top: 60px; }
 footer a { color: #ccc; margin: 0 8px; }
 .count-badge { font-size: .78rem; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 8px; margin-left: 6px; font-weight: 600; }
@@ -58,6 +69,7 @@ footer a { color: #ccc; margin: 0 8px; }
   .hero h1 { font-size: 1.5rem; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   header nav { display: none; }
+  .detail-info { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -76,1210 +88,2690 @@ footer a { color: #ccc; margin: 0 8px; }
 <div class="container" style="padding-top:30px">
   <div class="breadcrumb"><a href="/incheon-hospital/">홈</a><span>›</span><a href="/incheon-hospital/region/">지역별</a><span>›</span>서구</div>
   <div class="section">
-    <h2>인천 서구 병원 목록 <span class="count-badge">1686개</span></h2>
-    <div class="info-box">총 1686개 병원 중 200개를 표시합니다. 진료시간은 변경될 수 있으니 방문 전 확인하세요.</div>
-    <table>
+    <h2>인천 서구 병원 목록 <span class="count-badge">383개</span></h2>
+    <div class="info-box">총 383개 병원. 병원명을 클릭하면 상세정보를 확인할 수 있습니다.</div><table>
       <thead><tr><th>병원명</th><th>진료과</th><th>주소</th><th>전화번호</th><th>토/일</th></tr></thead>
       <tbody><tr>
-          <td><strong>(의)성세의료재단 뉴성민병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">(의)성세의료재단 뉴성민병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 신석로 70, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 신석로 70, (석남동)</td>
           <td>032-726-1000</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가톨릭관동대학교 국제성모병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">가톨릭관동대학교 국제성모병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로100번길 25-0, 인천국제성모병원</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로100번길 25-0, 인천국제성모병원</td>
           <td>032-1600-8291</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단탑병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">검단탑병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청마로19번길 5, (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로19번길 5, (당하동)</td>
           <td>032-590-0114</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>온누리병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">온누리병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 199, 199</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 199, 199</td>
           <td>032-567-6200</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>의료법인루가의료재단 나은병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">의료법인루가의료재단 나은병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원적로 23, 23</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 23, 23</td>
           <td>032-584-0114</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단위키즈 병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">검단위키즈 병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원당대로 1039, 태경타워 3,4층 전체호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 1039, 태경타워 3,4층 전체호 (원당동)</td>
           <td>032-713-3300</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단조은아이365병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">검단조은아이365병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 발산로5번길 12, 인천검단 엔젤리움1차 윈팰리스 6,7층 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 발산로5번길 12, 인천검단 엔젤리움1차 윈팰리스 6,7층 (원당동)</td>
           <td>032-721-8288</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>나움병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">나움병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라에메랄드로 99-0,  A동 5층 (청라동,지젤엠청라)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로 99-0,  A동 5층 (청라동,지젤엠청라)</td>
           <td>032-1833-9903</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>바로서구병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">바로서구병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로464번길 24, 1층 115,116호, 8~10층 전체호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 24, 1층 115,116호, 8~10층 전체호 (가정동)</td>
           <td>1600-8549</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천연세병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">인천연세병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 승학로 320, (연희동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 320, (연희동)</td>
           <td>032-561-3457</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라국제병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">청라국제병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라에메랄드로102번길 8, (청라동, 우성메디피아 2층,4층일부)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로102번길 8, (청라동, 우성메디피아 2층,4층일부)</td>
           <td>032-577-8275</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>나무요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">나무요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로121번길 19, 새롬프라자 1~5층 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로121번길 19, 새롬프라자 1~5층 (원당동)</td>
           <td>032-569-7175</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서온요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">서온요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 도곡로 172-5, 서온요양병원 가,나동 (대곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 도곡로 172-5, 서온요양병원 가,나동 (대곡동)</td>
           <td>032-239-4600</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서울닥터스요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">서울닥터스요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 270, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 270, (석남동)</td>
           <td>032-721-7075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서울대효청라요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">서울대효청라요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로464번길 11, 루원탑프라자 4~8층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 11, 루원탑프라자 4~8층 (가정동)</td>
           <td>032-724-7114</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천광역시립노인치매요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">인천광역시립노인치매요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로132번길 21-1, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로132번길 21-1, (심곡동)</td>
           <td>562-5101</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천은혜요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">인천은혜요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로132번길 21, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로132번길 21, (심곡동)</td>
           <td>562-5101</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>정인의료소비자협동조합 검단연세요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">정인의료소비자협동조합 검단연세요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 검단로459번길 3-2, (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로459번길 3-2, (왕길동)</td>
           <td>032-505-6114</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청담요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">청담요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 열우물로 235, 2~5층 (가좌동, 가재울플라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 열우물로 235, 2~5층 (가좌동, 가재울플라자)</td>
           <td>032-324-8255</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라베스트요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">청라베스트요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 봉오재3로110번길 7, 가정봄프라자 6,7,8,9층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로110번길 7, 가정봄프라자 6,7,8,9층 (가정동)</td>
           <td>032-220-1500</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천참사랑병원</strong><br><span style="color:#888;font-size:.78rem">정신병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">인천참사랑병원</a><br>
+          <span style="color:#888;font-size:.78rem">정신병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원창로240번길 9, (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원창로240번길 9, (가정동)</td>
           <td>032-571-9111</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>365검단열린의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">365검단열린의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 단봉로 97-7, 3층 305, 306호 (오류동, 오류센터프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 단봉로 97-7, 3층 305, 306호 (오류동, 오류센터프라자)</td>
           <td>032-561-0365</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>365앨리스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">365앨리스의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서곶로 45, 2002호 (가정동, 루원 린스트라우스 더 린시티)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 45, 2002호 (가정동, 루원 린스트라우스 더 린시티)</td>
           <td>032-572-2007</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>365플러스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">365플러스의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음3로 145, JK타워 305~307호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음3로 145, JK타워 305~307호 (당하동)</td>
           <td>032-345-3657</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가정늘봄내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">가정늘봄내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 388, 2층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 388, 2층 (가정동)</td>
           <td>032-710-8170</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가좌성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">가좌성모의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 장고개로 283, 지하1층, 1층 일부호 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 장고개로 283, 지하1층, 1층 일부호 (가좌동)</td>
           <td>573-7582</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단다정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">검단다정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서로3로 198, 2층 214~216호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서로3로 198, 2층 214~216호 (원당동)</td>
           <td>032-710-5717</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단서울여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">검단서울여성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원당대로 664, 창신프라자 5층 501-1호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 664, 창신프라자 5층 501-1호 (당하동)</td>
           <td>032-566-1992</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단서유승내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">검단서유승내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 153, 이레메디칼센타 3층 (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 153, 이레메디칼센타 3층 (왕길동)</td>
           <td>032-568-4588</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단센트럴이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">검단센트럴이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 222, 푸리마더타워 601~604호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 222, 푸리마더타워 601~604호 (불로동)</td>
           <td>032-710-2159</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단속편한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">검단속편한내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 221, 엠파이어빌딩 301~310호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 221, 엠파이어빌딩 301~310호 (불로동)</td>
           <td>032-562-2509</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단스마트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDQjJDgz/" class="hosp-link">검단스마트내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서로3로 104, 신화프라자 4층 401~403호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서로3로 104, 신화프라자 4층 401~403호 (당하동)</td>
           <td>032-566-1199</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단연세정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">검단연세정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 222, 푸리마더타워 605~613호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 222, 푸리마더타워 605~613호 (불로동)</td>
           <td>032-561-3200</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단이엠365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">검단이엠365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음5로 30, 연세프라자9 2,3층 206~214, 305~314호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 30, 연세프라자9 2,3층 206~214, 305~314호 (원당동)</td>
           <td>032-568-5011</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단이화연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">검단이화연합의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음5로 80, 검단퍼스트 5층 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 80, 검단퍼스트 5층 (원당동)</td>
           <td>032-277-0705</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단중앙내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">검단중앙내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 285, 현해타워2 2,3층 208~210,303~310호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 285, 현해타워2 2,3층 208~210,303~310호 (불로동)</td>
           <td>032-564-7788</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검암스타365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">검암스타365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 한들로 74, 한들타워1 501~506호 (백석동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 한들로 74, 한들타워1 501~506호 (백석동)</td>
           <td>032-721-8771</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>골드정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">골드정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 221, 엠파이어빌딩 701~705호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 221, 엠파이어빌딩 701~705호 (불로동)</td>
           <td>1800-7587</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>뉴서울여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">뉴서울여성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청마로19번길 20, 금진빌딩 3층 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로19번길 20, 금진빌딩 3층 (당하동)</td>
           <td>032-721-5942</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>다봄내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">다봄내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 승학로 491, 3층 (검암동, 고산빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 491, 3층 (검암동, 고산빌딩)</td>
           <td>032-564-1575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>닥터킨베인의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">닥터킨베인의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원당대로 840, 2층, 3층 일부호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 840, 2층, 3층 일부호 (당하동)</td>
           <td>032-562-0002</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더블유이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">더블유이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음대로 479, CS메디컬프라자 401~404호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 479, CS메디컬프라자 401~404호 (당하동)</td>
           <td>032-561-3500</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더예쁨의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">더예쁨의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 중봉대로 602, 101호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 602, 101호 (청라동)</td>
           <td>032-716-6110</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>동산가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">동산가정의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 거북로 115, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 거북로 115, (석남동)</td>
           <td>571-1998</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>드림재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">드림재활의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 중봉대로 588, (연희동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 588, (연희동)</td>
           <td>032-561-7177</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>든든내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">든든내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음대로 479, CS메디칼프라자 301, 302호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 479, CS메디칼프라자 301, 302호 (당하동)</td>
           <td>032-564-0102</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원성모내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">루원성모내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 437, 301동 B114~115호 (가정동, 루원시티 SK Leaders' VIEW)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 437, 301동 B114~115호 (가정동, 루원시티 SK Leaders' VIEW)</td>
           <td>032-575-8276</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원탑본의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">루원탑본의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 369, 서경 플러스 존 3층 304호 (신현동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 369, 서경 플러스 존 3층 304호 (신현동)</td>
           <td>032-719-7557</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원튼튼365소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">루원튼튼365소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 406, 225, 226, 227, 228-1호 (가정동, 루원지웰시티푸르지오)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 406, 225, 226, 227, 228-1호 (가정동, 루원지웰시티푸르지오)</td>
           <td>032-710-7524</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>모두탑365정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">모두탑365정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서곶로 293, 우민빌딩 2층 (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 293, 우민빌딩 2층 (심곡동)</td>
           <td>032-273-7575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>삼성가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDYjJDgz/" class="hosp-link">삼성가정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서달로123번길 12-4, 203,207,208호 (석남동, 신동아상가)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서달로123번길 12-4, 203,207,208호 (석남동, 신동아상가)</td>
           <td>581-8275</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>삼성플러스유외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">삼성플러스유외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음대로 388, ABM타워 6층 601~607호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 6층 601~607호 (원당동)</td>
           <td>032-265-6075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>새빛튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">새빛튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로95번길 20, 힘찬프라자 301,302호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로95번길 20, 힘찬프라자 301,302호 (당하동)</td>
           <td>561-8915</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서울삼성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">서울삼성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 중봉대로 587, (경서동, 홈플러스청라점)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 587, (경서동, 홈플러스청라점)</td>
           <td>564-9970</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서울정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">서울정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로 468, 드림타워 601호,7층,8층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로 468, 드림타워 601호,7층,8층 (가정동)</td>
           <td>032-561-1140</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>성모가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">성모가정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로 129, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로 129, (심곡동)</td>
           <td>563-8275</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>소망가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">소망가정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로194번길 1, 2층 (공촌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로194번길 1, 2층 (공촌동)</td>
           <td>564-7582</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>소망연세의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">소망연세의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 새오개로111번안길 32, 2층 (신현동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 새오개로111번안길 32, 2층 (신현동)</td>
           <td>032-715-5774</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>속편한의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">속편한의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 탁옥로 45, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 탁옥로 45, (심곡동)</td>
           <td>032-719-8740</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>솔솔이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">솔솔이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음대로 392, 메트로시티 6층 605~606호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 6층 605~606호 (원당동)</td>
           <td>032-566-7586</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>아나파나마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">아나파나마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 375, 303호 (신현동, 금강아미움)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 303호 (신현동, 금강아미움)</td>
           <td>032-572-7579</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>아라의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">아라의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청마로167번길 24, 4층 (당하동, TK빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로167번길 24, 4층 (당하동, TK빌딩)</td>
           <td>032-715-6075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>아산큰내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">아산큰내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 검단로 469, 4~5층 (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 469, 4~5층 (왕길동)</td>
           <td>032-563-2770</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>아솔내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDYjJDgz/" class="hosp-link">아솔내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 발산로 6, 아인시티 주차타워 401 ~ 406호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 발산로 6, 아인시티 주차타워 401 ~ 406호 (원당동)</td>
           <td>032-565-1806</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>아스클레페이온 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">아스클레페이온 의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라한내로72번길 7-25, 리버사이드 크루즈몰 701호 일부, 801호, 901호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로72번길 7-25, 리버사이드 크루즈몰 701호 일부, 801호, 901호 (청라동)</td>
           <td>032-710-6368</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>에이플러스365청라가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">에이플러스365청라가정의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라루비로 95, 301호, 302호 (경서동, 경연프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라루비로 95, 301호, 302호 (경서동, 경연프라자)</td>
           <td>032-566-4834</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>연세가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">연세가정의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 단봉로 107, 3층 301호 (왕길동, 성우프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 단봉로 107, 3층 301호 (왕길동, 성우프라자)</td>
           <td>563-5575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>연세속튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">연세속튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로308번길 2, 2층 일부호 (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로308번길 2, 2층 일부호 (석남동)</td>
           <td>032-719-7584</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>연세수의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">연세수의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 심곡로 24, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로 24, (심곡동)</td>
           <td>567-7731</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>연세열린내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">연세열린내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 201-1, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 201-1, (석남동)</td>
           <td>579-6090</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>연세장튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">연세장튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음5로 60, JS프라자 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 60, JS프라자 (원당동)</td>
           <td>032-565-0815</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>오라클피부과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">오라클피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 153, 이레메디칼센타 5층 (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 153, 이레메디칼센타 5층 (왕길동)</td>
           <td>032-566-4114</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>우리미래소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">우리미래소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 검단로 836, (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 836, (불로동)</td>
           <td>032-565-5677</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>우리탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">우리탑내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 검단로 480, 검단리치웰프라자 206,207호 (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 검단리치웰프라자 206,207호 (왕길동)</td>
           <td>032-565-8789</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>위바른내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDQjJDgz/" class="hosp-link">위바른내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음대로 378, 로뎀타워 501~506, 511호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 501~506, 511호 (원당동)</td>
           <td>032-561-5570</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>율이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">율이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라한내로 96, 하엘에스페이스 303호, 304호일부, 305호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로 96, 하엘에스페이스 303호, 304호일부, 305호 (청라동)</td>
           <td>032-719-4606</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>의료법인순의료재단가정성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">의료법인순의료재단가정성모의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청중로 486, 부일프라자 3층,4층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청중로 486, 부일프라자 3층,4층 (가정동)</td>
           <td>032-565-7586</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>이화별의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">이화별의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 172, 4층 407호 (마전동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 4층 407호 (마전동)</td>
           <td>032-564-9400</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">인천연합의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로 329, 지하1층~2층, 3층일부, 4층일부 (신현동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로 329, 지하1층~2층, 3층일부, 4층일부 (신현동)</td>
           <td>574-4843</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>제대로정형외과마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">제대로정형외과마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 크리스탈로 78, 엘림존 4층 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 크리스탈로 78, 엘림존 4층 (청라동)</td>
           <td>032-1522-7235</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>조은소리이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">조은소리이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 172, 5층 2호 (마전동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 5층 2호 (마전동)</td>
           <td>032-724-9075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>중앙외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">중앙외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 율도로 62-1, 3,4층 (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 율도로 62-1, 3,4층 (석남동)</td>
           <td>032-571-7136</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라 닥터에버스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">청라 닥터에버스의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 451, 1028~1036호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 1028~1036호 (가정동)</td>
           <td>032-575-8813</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라나눔내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">청라나눔내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라한내로 90, MK뷰 505~9호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로 90, MK뷰 505~9호 (청라동)</td>
           <td>032-567-0750</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라바른내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">청라바른내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라한내로161번길 3-5, 2, 3, 4층 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로161번길 3-5, 2, 3, 4층 (청라동)</td>
           <td>032-562-8575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라베스트365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">청라베스트365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 중봉대로 594, 청라비전프라자 301,302호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 청라비전프라자 301,302호 (청라동)</td>
           <td>032-721-4365</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라세란메디컬의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">청라세란메디컬의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 중봉대로 490, 126,127,130호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 490, 126,127,130호 (청라동)</td>
           <td>032-203-3300</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라센트럴안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">청라센트럴안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 크리스탈로74번길 31, 501, 502호 (경서동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 크리스탈로74번길 31, 501, 502호 (경서동)</td>
           <td>032-582-0079</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">청라의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라에메랄드로 78, 305호 (청라동, 딜라이트타워)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로 78, 305호 (청라동, 딜라이트타워)</td>
           <td>032-208-7711</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라이엠365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">청라이엠365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 청라한내로100번길 24, 쓰리엠파크2 202~205, 301~305호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로100번길 24, 쓰리엠파크2 202~205, 301~305호 (청라동)</td>
           <td>032-564-0911</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라화외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">청라화외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로464번길 24, 612~618호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 24, 612~618호 (가정동)</td>
           <td>032-277-0100</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>코안이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">코안이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서곶로 823, 2층 (당하동, 송산프라자1)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 823, 2층 (당하동, 송산프라자1)</td>
           <td>032-773-8275</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>큰나무의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">큰나무의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로151번길 11, (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로151번길 11, (가좌동)</td>
           <td>571-0011</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>태헬스케어의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">태헬스케어의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 원당대로 1045, 금호헤리티지7 5~6층 501~513, 608~613호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 1045, 금호헤리티지7 5~6층 501~513, 608~613호 (원당동)</td>
           <td>032-716-9930</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>튼튼나무소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">튼튼나무소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 이음1로 383, 세중시그니쳐 7층 701호~711호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음1로 383, 세중시그니쳐 7층 701호~711호 (원당동)</td>
           <td>032-719-7559</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 도요지로 22, 2층 2호 (경서동, 대영프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 도요지로 22, 2층 2호 (경서동, 대영프라자)</td>
           <td>032-567-6790</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>티움이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">티움이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 봉오대로 255, 404~407호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오대로 255, 404~407호 (가정동)</td>
           <td>-</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>한나이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">한나이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 140, 수협 2층 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 140, 수협 2층 (가좌동)</td>
           <td>032-573-1077</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>해성이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDQjJDgz/" class="hosp-link">해성이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고산후로 221, 엠파이어빌딩 401~404호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 221, 엠파이어빌딩 401~404호 (불로동)</td>
           <td>032-227-9485</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>행복백세내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">행복백세내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 서곶로 281, 자혜정형외과 2층일부,4층 (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 281, 자혜정형외과 2층일부,4층 (심곡동)</td>
           <td>032-562-7755</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>행복의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">행복의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 신진말로 30, 승지빌딩 1~3층 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 신진말로 30, 승지빌딩 1~3층 (가좌동)</td>
           <td>032-571-7575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>행복한가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">행복한가정의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 고래울로 4, 2층 일부호 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고래울로 4, 2층 일부호 (가좌동)</td>
           <td>032-582-3824</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>현대아이비의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">현대아이비의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 탁옥로 45, 3층 (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 탁옥로 45, 3층 (심곡동)</td>
           <td>032-564-0754</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>홍앤장내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">홍앤장내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 가정로 406, A동 301~303호 (가정동, 루원지웰시티푸르지오)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 406, A동 301~303호 (가정동, 루원지웰시티푸르지오)</td>
           <td>032-566-5353</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>조은내일치과병원</strong><br><span style="color:#888;font-size:.78rem">치과병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">조은내일치과병원</a><br>
+          <span style="color:#888;font-size:.78rem">치과병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 승학로 250, (심곡동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 250, (심곡동)</td>
           <td>032-564-3500</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단스마일한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">검단스마일한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 완정로 55, 광진빌딩 2,3,4,5층 (마전동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 55, 광진빌딩 2,3,4,5층 (마전동)</td>
           <td>032-569-8088</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>서인천한방병원</strong><br><span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">서인천한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 서구 염곡로464번길 7, 성도메디피아 6~8층 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 7, 성도메디피아 6~8층 (가정동)</td>
           <td>032-521-7582</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라베스트요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">인천 복십자의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>결핵과</td>
-          <td>인천광역시 서구 봉오재3로110번길 7, 가정봄프라자 6,7,8,9층 (가정동)</td>
-          <td>032-220-1500</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>새빛튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>결핵과</td>
-          <td>인천광역시 서구 고산후로95번길 20, 힘찬프라자 301,302호 (당하동)</td>
-          <td>561-8915</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>율이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>결핵과</td>
-          <td>인천광역시 서구 청라한내로 96, 하엘에스페이스 303호, 304호일부, 305호 (청라동)</td>
-          <td>032-719-4606</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천 복십자의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>결핵과</td>
-          <td>인천광역시 서구 원당대로 856, 마크포레스트 어반 201,202,203호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 856, 마크포레스트 어반 201,202,203호 (당하동)</td>
           <td>032-565-8931</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>(의)성세의료재단 뉴성민병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">노송병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 신석로 70, (석남동)</td>
-          <td>032-726-1000</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>가톨릭관동대학교 국제성모병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 심곡로100번길 25-0, 인천국제성모병원</td>
-          <td>032-1600-8291</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단탑병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 청마로19번길 5, (당하동)</td>
-          <td>032-590-0114</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>온누리병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 완정로 199, 199</td>
-          <td>032-567-6200</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인루가의료재단 나은병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 원적로 23, 23</td>
-          <td>032-584-0114</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단위키즈 병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 원당대로 1039, 태경타워 3,4층 전체호 (원당동)</td>
-          <td>032-713-3300</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단조은아이365병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 발산로5번길 12, 인천검단 엔젤리움1차 윈팰리스 6,7층 (원당동)</td>
-          <td>032-721-8288</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>노송병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 가정로 280, 2~5층, 7층 (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 280, 2~5층, 7층 (석남동)</td>
           <td>516-5000</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>바로서구병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">착한마디병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 염곡로464번길 24, 1층 115,116호, 8~10층 전체호 (가정동)</td>
-          <td>1600-8549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천연세병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 승학로 320, (연희동)</td>
-          <td>032-561-3457</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>착한마디병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 완정로 180, 2,3,4,5층 (마전동, 동화빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 180, 2,3,4,5층 (마전동, 동화빌딩)</td>
           <td>032-1577-9782</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청라국제병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">청라여성병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 청라에메랄드로102번길 8, (청라동, 우성메디피아 2층,4층일부)</td>
-          <td>032-577-8275</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>청라여성병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 중봉대로 602, 2~5층,6층일부,9층 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 602, 2~5층,6층일부,9층 (청라동)</td>
           <td>032-716-6000</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>감인의료재단 청라백세요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">감인의료재단 청라백세요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 로봇랜드로249번길 14, 청라백세요양병원 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 로봇랜드로249번길 14, 청라백세요양병원 (청라동)</td>
           <td>032-524-8800</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>나무요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDgjJDgz/" class="hosp-link">천진요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 고산후로121번길 19, 새롬프라자 1~5층 (원당동)</td>
-          <td>032-569-7175</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>서온요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 도곡로 172-5, 서온요양병원 가,나동 (대곡동)</td>
-          <td>032-239-4600</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>서울닥터스요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 가정로 270, (석남동)</td>
-          <td>032-721-7075</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천은혜요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 심곡로132번길 21, (심곡동)</td>
-          <td>562-5101</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>정인의료소비자협동조합 검단연세요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 검단로459번길 3-2, (왕길동)</td>
-          <td>032-505-6114</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>천진요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 건지로 264, 4,5,6층 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 건지로 264, 4,5,6층 (가좌동)</td>
           <td>032-577-9777</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>청담요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">365마디팔팔의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 열우물로 235, 2~5층 (가좌동, 가재울플라자)</td>
-          <td>032-324-8255</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>청라베스트요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 봉오재3로110번길 7, 가정봄프라자 6,7,8,9층 (가정동)</td>
-          <td>032-220-1500</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천참사랑병원</strong><br><span style="color:#888;font-size:.78rem">정신병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 원창로240번길 9, (가정동)</td>
-          <td>032-571-9111</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>365검단열린의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 단봉로 97-7, 3층 305, 306호 (오류동, 오류센터프라자)</td>
-          <td>032-561-0365</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>365마디팔팔의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음1로 383, 세중시그니쳐 607~611호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음1로 383, 세중시그니쳐 607~611호 (원당동)</td>
           <td>032-710-6468</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>365별소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">365별소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 375, 3층 304호 (신현동, 금강아미움)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 3층 304호 (신현동, 금강아미움)</td>
           <td>032-581-9900</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>365앨리스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDQjJDgz/" class="hosp-link">가인의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 서곶로 45, 2002호 (가정동, 루원 린스트라우스 더 린시티)</td>
-          <td>032-572-2007</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>365플러스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음3로 145, JK타워 305~307호 (당하동)</td>
-          <td>032-345-3657</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>가인의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 가정로 204, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 204, (석남동)</td>
           <td>575-3070</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가정늘봄내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">가좌신경외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 388, 2층 (가정동)</td>
-          <td>032-710-8170</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>가좌성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 장고개로 283, 지하1층, 1층 일부호 (가좌동)</td>
-          <td>573-7582</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>가좌신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 원적로 103, 2층 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 103, 2층 (가좌동)</td>
           <td>577-4215</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가좌연세정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">가좌연세정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 장고개로337번길 7, (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 장고개로337번길 7, (가좌동)</td>
           <td>032-297-1001</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>가좌우리내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">가좌우리내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 고래울로 29, (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고래울로 29, (가좌동)</td>
           <td>576-8575</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>강남의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">강남의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 308, 301호,302호 일부호 (석남동, 석남프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 308, 301호,302호 일부호 (석남동, 석남프라자)</td>
           <td>574-7582</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>거북연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">거북연합의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 204, (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 204, (석남동)</td>
           <td>577-3650</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단나은의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">검단나은의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 검단로 508, 3층 (마전동, 이지준프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 508, 3층 (마전동, 이지준프라자)</td>
           <td>032-590-5700</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단다정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">검단더굿정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 서로3로 198, 2층 214~216호 (원당동)</td>
-          <td>032-710-5717</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단더굿정형외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음대로 392, 메트로시티 213~215호,508~510호 (원당동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 213~215호,508~510호 (원당동)</td>
           <td>032-5674001</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단서유승내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">검단연합의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 완정로 153, 이레메디칼센타 3층 (왕길동)</td>
-          <td>032-568-4588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단센트럴이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 고산후로 222, 푸리마더타워 601~604호 (불로동)</td>
-          <td>032-710-2159</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단속편한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 고산후로 221, 엠파이어빌딩 301~310호 (불로동)</td>
-          <td>032-562-2509</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단스마트내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 서로3로 104, 신화프라자 4층 401~403호 (당하동)</td>
-          <td>032-566-1199</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 원당대로 660, 401호,402호 일부호 (당하동, 영프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 660, 401호,402호 일부호 (당하동, 영프라자)</td>
           <td>032-569-8823</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검단이엠365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">검암연세내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 이음5로 30, 연세프라자9 2,3층 206~214, 305~314호 (원당동)</td>
-          <td>032-568-5011</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단이화연합의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음5로 80, 검단퍼스트 5층 (원당동)</td>
-          <td>032-277-0705</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검단중앙내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 고산후로 285, 현해타워2 2,3층 208~210,303~310호 (불로동)</td>
-          <td>032-564-7788</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검암스타365의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 한들로 74, 한들타워1 501~506호 (백석동)</td>
-          <td>032-721-8771</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>검암연세내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 승학로483번길 18-8, (검암동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로483번길 18-8, (검암동)</td>
           <td>032-572-5126</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검암우리손내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">검암우리손내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 승학로 498, 서해프라자 301~304호 (검암동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 498, 서해프라자 301~304호 (검암동)</td>
           <td>032-561-7075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>검암중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">검암중앙의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 승학로 577, 305,306호 (검암동, 장은프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 577, 305,306호 (검암동, 장은프라자)</td>
           <td>032-566-5542</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>고려가정의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">고려가정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 경서로69번길 12, (경서동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 경서로69번길 12, (경서동)</td>
           <td>566-5777</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>고영승이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">고영승이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 완정로 179, 4층 (왕길동, 검단메디컬프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 179, 4층 (왕길동, 검단메디컬프라자)</td>
           <td>032-568-7585</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>고운의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">고운의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 거북로 98, 3층 (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 거북로 98, 3층 (석남동)</td>
           <td>578-2800</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>고은미래의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">고은미래의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 원적로 85, 4층 (가좌동, 우신프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 85, 4층 (가좌동, 우신프라자)</td>
           <td>579-7677</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>고정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">고정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 363, 그린빌딩 2층 201호 (신현동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 363, 그린빌딩 2층 201호 (신현동)</td>
           <td>572-0572</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>그린산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">그린산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 건지로 371, (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 건지로 371, (가좌동)</td>
           <td>032-574-3535</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>길벗내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">길벗내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 청라라임로 65, 4층 409,410호 (연희동, 라임타워)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 65, 4층 409,410호 (연희동, 라임타워)</td>
           <td>032-576-5900</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>김경현내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">김경현내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 완정로 36, 2층 일부호 (마전동, 한성빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 36, 2층 일부호 (마전동, 한성빌딩)</td>
           <td>564-7515</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>김득조내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">김득조내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 율도로 98, 302호 (석남동, 서인빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 율도로 98, 302호 (석남동, 서인빌딩)</td>
           <td>032-581-9777</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>김성철신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">김성철신경외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 287, 지하1층~1층 (석남동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 287, 지하1층~1층 (석남동)</td>
           <td>032-583-7582</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>김승연산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">김승연산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 서곶로 355, 3층 (연희동, 한터빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 355, 3층 (연희동, 한터빌딩)</td>
           <td>563-1251</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>누리소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">누리소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 고산후로 222, 푸리마더타워 501,502호 (불로동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 222, 푸리마더타워 501,502호 (불로동)</td>
           <td>-</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>뉴서울여성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">늘푸른연세이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 청마로19번길 20, 금진빌딩 3층 (당하동)</td>
-          <td>032-721-5942</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>늘푸른연세이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 승학로 491, 403호 (검암동, 고산프라자)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 491, 403호 (검암동, 고산프라자)</td>
           <td>568-4327</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>늘푸른의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">늘푸른의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 검단로623번길 4, (마전동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로623번길 4, (마전동)</td>
           <td>032-561-3663</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>다나의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">다나의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 연희로 12, 2층 (연희동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 연희로 12, 2층 (연희동)</td>
           <td>032-568-2075</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>다봄내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">다봄이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 승학로 491, 3층 (검암동, 고산빌딩)</td>
-          <td>032-564-1575</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>다봄이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 청라커낼로 264, 청라두손중앙프라자 203,204호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로 264, 청라두손중앙프라자 203,204호 (청라동)</td>
           <td>032-721-7583</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>다정한내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">다정한내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 청라루비로 81, 201~204호 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라루비로 81, 201~204호 (청라동)</td>
           <td>032-562-7511</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>닥터스의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">닥터스의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 크리스탈로102번길 8-12, 수린빌딩 5~7층 (청라동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 크리스탈로102번길 8-12, 수린빌딩 5~7층 (청라동)</td>
           <td>032-721-4115</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더(the)조은정신건강의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">더(the)조은정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 원당대로 860, 보람프라자 804호 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 860, 보람프라자 804호 (당하동)</td>
           <td>032-564-7505</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더나아산부인과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">더나아산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 검단로 480, 검단리치웰프라자 504호일부, 505~509호 (왕길동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 검단리치웰프라자 504호일부, 505~509호 (왕길동)</td>
           <td>032-567-5732</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더바른성모내과의원(The바른성모내과의원)</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">더바른성모내과의원(The바른성모내과의원)</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 이음3로 149, 위너스 프라자 5층 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음3로 149, 위너스 프라자 5층 (당하동)</td>
           <td>032-568-8275</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>더블유이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDYjJDgz/" class="hosp-link">더숲이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 이음대로 479, CS메디컬프라자 401~404호 (당하동)</td>
-          <td>032-561-3500</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>더숲이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음3로 149, 위너스 프라자 4층 (당하동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음3로 149, 위너스 프라자 4층 (당하동)</td>
           <td>032-710-6987</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>동산가정의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">두리가자의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 거북로 115, (석남동)</td>
-          <td>571-1998</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>두리가자의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 가정로 123, 2,5층 (가좌동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 123, 2,5층 (가좌동)</td>
           <td>574-7500</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>드림재활의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">라벨의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 중봉대로 588, (연희동)</td>
-          <td>032-561-7177</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>든든내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 이음대로 479, CS메디칼프라자 301, 302호 (당하동)</td>
-          <td>032-564-0102</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>라벨의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 완정로 18, 6층 (마전동, 한윤빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 18, 6층 (마전동, 한윤빌딩)</td>
           <td>566-7533</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원삼성비뇨의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">루원삼성비뇨의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 봉오재3로 90, 한일골드타워 501호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 90, 한일골드타워 501호 (가정동)</td>
           <td>032-565-0728</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원성모내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDgjJDgz/" class="hosp-link">루원탑내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 437, 301동 B114~115호 (가정동, 루원시티 SK Leaders' VIEW)</td>
-          <td>032-575-8276</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>루원탑내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 봉오대로 255, 루원눈담봄 2층 207~210호 (가정동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오대로 255, 루원눈담봄 2층 207~210호 (가정동)</td>
           <td>032-561-7535</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>루원탑본의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">마디튼튼마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 가정로 369, 서경 플러스 존 3층 304호 (신현동)</td>
-          <td>032-719-7557</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>루원튼튼365소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 가정로 406, 225, 226, 227, 228-1호 (가정동, 루원지웰시티푸르지오)</td>
-          <td>032-710-7524</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>마디튼튼마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 서구 승학로 507, 장한프라자 2,3층 201,202,301호 (검암동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 507, 장한프라자 2,3층 201,202,301호 (검암동)</td>
           <td>032-710-6900</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>마전참사랑의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">마전참사랑의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 마전로5번길 22-1, 2층 (마전동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 마전로5번길 22-1, 2층 (마전동)</td>
           <td>566-0172</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>마트소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">마트소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 서구 청라커낼로 252, (경서동)</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로 252, (경서동)</td>
           <td>568-6977</td>
-          <td><br></td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">맑은코아이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 3층 312호 (신현동, 금강아미움)</td>
+          <td>032-571-5251</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">문내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로72번길 23, 301,302호 (청라동)</td>
+          <td>032-561-7515</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">문정식내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 103, (가좌동)</td>
+          <td>583-2246</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">미래안마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 469, 3층 (왕길동)</td>
+          <td>070-8672-0011</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">바로본365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 309, 3층일부, 4층 (석남동)</td>
+          <td>032-575-0365</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">바로이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라루비로 93, 루비타워 403,409호 (청라동)</td>
+          <td>032-561-5085</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">베드로의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 77, (가좌동)</td>
+          <td>571-9018</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">보아스이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 497, 204호 (검암동, 검암프라자)</td>
+          <td>032-563-2297</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">사과나무소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 567, 301호 (검암동)</td>
+          <td>032-561-9575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">사랑소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 새오개로111번안길 31, 201호 (신현동)</td>
+          <td>032-572-8277</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">삼성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 건지로 264, 205호 (가좌동)</td>
+          <td>575-4535</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">삼성퍼스트소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 80, 검단퍼스트 603호 (원당동)</td>
+          <td>032-563-3715</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">상이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 372, 2층 (가정동)</td>
+          <td>572-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">새힘정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 306호, 307호, 308 호 (신현동, 금강아미움)</td>
+          <td>032-583-2014</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">서구연세정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로394번길 1, (가정동)</td>
+          <td>032-582-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">서울바른정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로768번길 2, 불로메디컬 2~5층 (불로동)</td>
+          <td>032-566-8288</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">서울아산마디척의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 300, 엄지빌딩 401호 (심곡동)</td>
+          <td>032-710-3833</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">서인천성모의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 탁옥로 49, 4층 (심곡동, 제스트프라자)</td>
+          <td>566-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">서인천현대정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 탁옥로 45, 2,5층 (심곡동)</td>
+          <td>561-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">선소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 한중1로 14, 센트럴빌딩 2층 202호 (백석동)</td>
+          <td>032-568-8277</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">성모루원수이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 437, 301동 202~204 일부호 (가정동, 루원시티 SK Leaders' VIEW)</td>
+          <td>032-573-1175</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">성모센트럴정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 7, 501~502호 (가정동)</td>
+          <td>032-710-7541</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDgjJDgz/" class="hosp-link">성모퍼스트정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 120, 인성프라자 202~203호 (가좌동)</td>
+          <td>032-571-1100</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">속편안내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 70, 2층 (마전동, 영남탑스빌 웰빙타운)</td>
+          <td>561-6060</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">손태용내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 건지로 264, 303,304호 (가좌동)</td>
+          <td>032-572-0046</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">수이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 35, (마전동)</td>
+          <td>032-563-7887</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">신현승내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 85, (가좌동, 우신프라자)</td>
+          <td>582-8575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">아이(i)제일소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 42, 201호 (가정동, 다온프라자)</td>
+          <td>032-564-9110</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">아이비소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 51, 208호 (연희동, 에일린의뜰)</td>
+          <td>032-473-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDQjJDgz/" class="hosp-link">아이사랑소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 40, 202호 (가정동)</td>
+          <td>032-561-0279</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">아이언정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오대로 255, 루원 눈담봄 4층 408~412호 (가정동)</td>
+          <td>032-721-7573</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">안용진내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 187, 2,5,6층 (왕길동)</td>
+          <td>032-562-1430</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">양영표내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 364-1, 3층 (가정동, 창대빌딩)</td>
+          <td>576-9164</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">엄기영정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 363, 4층 (신현동, 그린빌딩)</td>
+          <td>032-571-0053</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">엄마와아이들소아청소년과산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 388, (가정동)</td>
+          <td>572-1771</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">연세인이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 장고개로337번길 16, 가좌한신 휴아파트 상가 405호 (가좌동)</td>
+          <td>032-581-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">연세조내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로768번1길 4, 2,3층 (불로동, 세인빌딩)</td>
+          <td>563-6894</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">연세항외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 474, 뷰비스타운 501~502호, 505~506호 (왕길동)</td>
+          <td>032-568-2259</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">열린성모이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 진영메디피아 504호 (청라동)</td>
+          <td>032-885-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDYjJDgz/" class="hosp-link">열린이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 44, 2층 (가정동, 명문프라자)</td>
+          <td>032-565-0938</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">예일메디칼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 거북로 97, (석남동)</td>
+          <td>581-6904</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">오케이마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 651, 완정빌딩 2,3층 (마전동)</td>
+          <td>032-566-7700</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">우리베스트내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 15, 4층 (가정동)</td>
+          <td>032-715-6308</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">우리소아과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로167번길 8, 2층 (당하동, 강남빌딩)</td>
+          <td>565-0075</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDQjJDgz/" class="hosp-link">우리편한내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 405,406호 (신현동, 금강아미움)</td>
+          <td>577-1195</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">원당연세메디칼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 841, 골든벨프라자 302,303,304,305,502,503호 (원당동)</td>
+          <td>032-566-5060</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">원당연세이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로95번길 20, 303호 (당하동, 힘찬프라자)</td>
+          <td>566-7530</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">원당연세정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 866, 5층 (당하동, 세브란스빌딩)</td>
+          <td>569-2400</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">원재활의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 850, 프런치타워 3층 (당하동)</td>
+          <td>032-569-5130</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">위편한내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 866, 301호 (당하동, 세브란스빌딩)</td>
+          <td>565-7881</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">위풍당당정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 검단리치웰프라자 301~303호 (왕길동)</td>
+          <td>032-567-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">유승진내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 90, 한일골드타워 301호 (가정동)</td>
+          <td>032-566-0111</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">유앤박소아과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 거북로 98, (석남동)</td>
+          <td>573-3297</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">윤이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 187, 401호 (왕길동, 마전메디칼센타)</td>
+          <td>032-565-2356</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">이동희소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 293, 403호 (심곡동, 우민빌딩)</td>
+          <td>032-565-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">이룸의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 건지로 402, 201, 301호 (가좌동, 가좌한신휴플러스)</td>
+          <td>032-577-2624</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">이승철소아과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서달로 159, 2층 201호 (석남동)</td>
+          <td>583-7523</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">이음소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 479, CS메디칼프라자 3층 303호 (당하동)</td>
+          <td>032-562-4790</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">이정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 35, 301호 (마전동, 대운프라자)</td>
+          <td>032-561-3382</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">이주영미즈영상의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 403호 (마전동)</td>
+          <td>032-562-0033</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">인천수내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로394번길 1, (가정동)</td>
+          <td>584-5599</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">임내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 202, (석남동)</td>
+          <td>032-571-0668</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">자혜정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 281, 자혜정형외과 지하1층,1층 (심곡동)</td>
+          <td>032-567-5571</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">정내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 836, 215호 (불로동, 월드메가마트)</td>
+          <td>567-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">정우정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 501, (검암동)</td>
+          <td>566-5986</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">정재운정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 316, (석남동)</td>
+          <td>032-584-0300</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">정정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 179, (왕길동)</td>
+          <td>032-567-7577</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">제일가정의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로96번길 26, 2층 (가좌동, 프라자쇼핑)</td>
+          <td>579-2095</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">조성원내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로 163, (당하동)</td>
+          <td>565-0771</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">조은정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 860, 보람프라자 7층, 803호 (당하동)</td>
+          <td>032-564-6655</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">진메디칼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 18, 303호 (마전동, 한윤메디칼빌딩)</td>
+          <td>565-9365</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">진이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로288번길 10, 더스페이스타워 403,404호 (청라동)</td>
+          <td>032-561-5552</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">차왕기내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 201, (석남동)</td>
+          <td>574-0188</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">청라건강한내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 5층 (청라동, 진영메디피아)</td>
+          <td>567-8009</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">청라맑은숨내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로102번길 8, 우성메디피아 303,304호 (청라동)</td>
+          <td>032-272-0012</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">청라미소소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로288번길 10, 더스페이스타워 505호 (청라동)</td>
+          <td>032-563-7227</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">청라바른정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 65, 503호~510호 (연희동, 라임타워)</td>
+          <td>032-584-7300</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">청라사랑내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로260번길 11, 진성프라자 303, 304, 310, 311, 312호 (청라동)</td>
+          <td>032-561-5584</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">청라성모정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 진영메디피아 3층 1~4호 (청라동)</td>
+          <td>567-3334</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">청라튼튼소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 솔빛로 24, 2층 (경서동, 부영프라자)</td>
+          <td>032-564-5955</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">청라행복내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 588, 506,507호 (연희동, 청라센트럴프라자)</td>
+          <td>032-569-8000</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">최비뇨기과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, (가좌동)</td>
+          <td>579-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">코아이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 588, (연희동)</td>
+          <td>032-575-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">킹소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 402호 (마전동)</td>
+          <td>032-568-5119</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">탑키즈소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 동화시로 112, 405,406,407호 (불로동)</td>
+          <td>070-4099-5035</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">튼튼마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 372, 4층, 5층 2호 (가정동)</td>
+          <td>032-582-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">하이맨비뇨기과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 406,407호 (왕길동, 검단리치웰프라자)</td>
+          <td>032-568-5768</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">하이큐연희내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 355-1, 2,3,5층 (연희동)</td>
+          <td>568-2220</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">하이큐홍내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, 4층 (가좌동, 가좌로얄프라자)</td>
+          <td>582-5430</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">한길정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 85, 201호 (가좌동, 우신프라자)</td>
+          <td>032-576-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">한림내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 293, (심곡동)</td>
+          <td>567-5767</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">한사랑산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 660, 영프라자 6,7(일부)층 (당하동)</td>
+          <td>032-561-4313</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">한사랑의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서달로 159, 202호 (석남동)</td>
+          <td>582-4365</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">해맑은소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 405호 (청라동, 진영메디피아)</td>
+          <td>032-569-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">행복한이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 836, (불로동)</td>
+          <td>032-569-0061</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">검단강함한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 발산로5번길 12, 인천검단 엔젤리움1차 윈팰리스 501~509호 (원당동)</td>
+          <td>032-564-7878</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">명장한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로 175, 3,4,5층 (당하동, 뉴욕프라자)</td>
+          <td>032-569-5858</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">청라S한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로586번길 9-4,  6,8층 (청라동,쓰리엠타워)</td>
+          <td>032-279-3000</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">해오름 한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 1039, 태경타워 5,6층 전체호 (원당동)</td>
+          <td>032-932-7000</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">가정역퍼스트정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 2층 201,204,205호 (신현동, 금강아미움)</td>
+          <td>032-584-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">검단바로본365의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로178번길 1, 검단빌딩 (마전동)</td>
+          <td>032-569-3650</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">검단바른정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서로3로 104, 신화디벨로퍼 2,5층 (당하동)</td>
+          <td>032-719-9998</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">검단본정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서로3로 112, 4층 401~408호 (당하동)</td>
+          <td>032-715-8314</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">검단정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 705~709호 (원당동)</td>
+          <td>032-561-6122</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">검단탑본정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 동화시로 112, 301~307호 (불로동)</td>
+          <td>032-561-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">고려재활의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 15, 쓰리엠타워 5층 (가정동)</td>
+          <td>032-564-8833</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">공감마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 301, 302호 (마전동)</td>
+          <td>032-710-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">더본마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 448~454호 (가정동)</td>
+          <td>032-561-8136</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">바로튼튼정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 837, 3~4층 (당하동)</td>
+          <td>032-565-1175</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">서울정석정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 406~409호 (원당동)</td>
+          <td>032-287-1200</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">세로척정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라한내로 90, MK 뷰 201~204호 (청라동)</td>
+          <td>032-267-7577</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">연세마디윌의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 6층 609~612호 (원당동)</td>
+          <td>032-567-0555</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">우리들신경외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 96, (가좌동)</td>
+          <td>032-577-1500</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">윤재활의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 404,405호 (마전동)</td>
+          <td>032-568-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDAjJDgz/" class="hosp-link">인하마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, (가좌동)</td>
+          <td>032-583-7275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">청라코끼리마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 청라비전프라자 406~408호 (청라동)</td>
+          <td>032-567-7580</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">팔팔마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 212, 3,6층 (석남동)</td>
+          <td>032-582-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">하늘본튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 856, 마크포레스트 어반 301~303호 (당하동)</td>
+          <td>032-204-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">청라좋은한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>마취통증의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로 79-0, 2층 (청라동,커낼에비뉴)</td>
+          <td>032-568-2005</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">은혜병원</a><br>
+          <span style="color:#888;font-size:.78rem">정신병원</span></td>
+          <td>병리과</td>
+          <td style="font-size:.82rem">인천광역시 서구 심곡로132번길 22, (심곡동)</td>
+          <td>562-5101</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">검단다온비뇨의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 7층 708~710호 (원당동)</td>
+          <td>032-535-1405</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">라임비뇨의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 504호, 505호 (청라동, 청라비전프라자)</td>
+          <td>032-564-5388</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">명메디칼스킨남성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 364-1, 6층 (가정동, 창대빌딩)</td>
+          <td>561-7564</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">미라클비뇨기과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 363, 3층 (신현동, 그린빌딩)</td>
+          <td>032-572-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">박경준비뇨기과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 탁옥로 55, SM스카이빌 301,302호 (심곡동)</td>
+          <td>568-9400</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">서울수의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 660, (당하동)</td>
+          <td>562-7553</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">엘림비뇨기과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 308, (석남동)</td>
+          <td>577-7533</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">연세원비뇨의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 65, 501호 (청라동, 라임타워)</td>
+          <td>032-583-1313</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">연세의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>비뇨의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 187, 4층 (왕길동)</td>
+          <td>032-563-2288</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">강남산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 474, 405호, 406호 (왕길동, 뷰비스타운)</td>
+          <td>569-3582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">검단성모산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 4층 408,409호 (원당동)</td>
+          <td>032-561-2070</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">검단아라산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 5층 512~515호 (원당동)</td>
+          <td>032-569-7575</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">금산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 승학로 528, (검암동)</td>
+          <td>032-569-0880</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">나라여성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 벨라미센텀시티 935~941호 (가정동)</td>
+          <td>032-565-9001</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">마리아산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 358, (가정동)</td>
+          <td>575-8870</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">샤인산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 222, 푸리마더타워 301~304호 (불로동)</td>
+          <td>032-713-9972</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">애플산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 608~611호 (원당동)</td>
+          <td>032-266-8275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDgjJDgz/" class="hosp-link">연세산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, 604호 (가좌동, 로얄프라자)</td>
+          <td>566-0001</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">우리들산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 187, 3층 (왕길동, 마전메디칼센타)</td>
+          <td>562-8228</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDgjJDgz/" class="hosp-link">이해림산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 355-1, 4층 (연희동, 성우빌딩)</td>
+          <td>564-1800</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">차인종산부인과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로100번길 8, (가좌동)</td>
+          <td>032-571-6607</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">인정한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>산부인과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라에메랄드로 99-0,  5층 504,505호 (청라동,지젤엠청라)</td>
+          <td></td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">나눔성형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 검단리치웰프라자 308~310호 (왕길동)</td>
+          <td>032-567-7788</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">로지의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오재3로 90, 한일골드타워 201,202호 (가정동)</td>
+          <td>032-569-6515</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">미스토리의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 옻우물로 3, (석남동)</td>
+          <td>582-2452</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">유스앤영의원 청라루원시티점</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 염곡로464번길 7, 401~404호 (가정동)</td>
+          <td>032-710-7525</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">의료법인 정강의료재단 검단예쁨의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 147, 유영빌딩 11층 (왕길동)</td>
+          <td>032-713-5400</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">이음성형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 벨라미센텀시티 501~508호 (가정동)</td>
+          <td>032-563-3119</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">킵슨의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라루비로 93, 루비타워 (청라동)</td>
+          <td>032-567-5337</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">토파즈성형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 3층 308,309호 (청라동)</td>
+          <td>032-566-5790</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDYjJDgz/" class="hosp-link">톤즈의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>성형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음1로 377, 검단 눈담봄 101 4층 5~12호 (원당동)</td>
+          <td>032-724-9969</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">청라연세어린이병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로612번길 10-16, (청라동, 마르씨엘)</td>
+          <td>032-590-1500</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">가좌연세소아과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, (가좌동)</td>
+          <td>575-5275</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">권창규소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로19번길 20, 202호 (당하동, 검단서울여성병원빌딩)</td>
+          <td>568-1475</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">꿈꾸는소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 507, 508호 (원당동)</td>
+          <td>032-564-1675</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">미래안소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 480, 검단리치웰프라자 501~503, 504 일부호 (왕길동)</td>
+          <td>032-568-5255</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">삼성키즈소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 장고개로337번길 16, 402동 202호 (가좌동,가좌한신휴플러스상가)</td>
+          <td>032-578-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">신검단아이꿈소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 285, 현해타워2 201~203호 (불로동)</td>
+          <td>032-710-8256</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">연세기린소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 60, JS프라자 3층 308~311호 (원당동)</td>
+          <td>032-719-4620</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">이푸른소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 754, 3층 (당하동, 검단이마트)</td>
+          <td>566-3094</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">임진영소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>소아청소년과</td>
+          <td style="font-size:.82rem">인천광역시 서구 장고개로337번길 7, 2층 (가좌동, 모건베스트원상가)</td>
+          <td>576-0870</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNjEjJDEjJDgjJDgz/" class="hosp-link">마음행복정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>신경과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로586번길 9-4, 쓰리엠타워 504,505호 (청라동)</td>
+          <td>032-566-0700</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">세일정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>신경외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 213, (석남동)</td>
+          <td>032-575-2255</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNzEjJDEjJDgjJDgz/" class="hosp-link">성모사랑한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>신경외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 길주로 91, 성모사랑병원 1층일부, 2~4층 (석남동)</td>
+          <td>032-575-3200</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">산뜻하지심장혈관흉부외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>심장혈관흉부외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 벨라미센텀시티 334~337호 (가정동)</td>
+          <td></td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">검단다인안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 187, 2층 (왕길동)</td>
+          <td>562-0506</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDgjJDgz/" class="hosp-link">검단서울안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 663, 401호 (마전동, 한종프라자)</td>
+          <td>569-5333</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">김안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 202, (석남동)</td>
+          <td>032-575-6359</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">다인안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, 가좌로얄프라자 5층 (가좌동)</td>
+          <td>032-579-0088</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">루원스마일안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 828~839, 845~850호 (가정동)</td>
+          <td>032-710-3993</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">마이눈안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 고산후로 221, 엠파이어빌딩 601~605호 (불로동)</td>
+          <td>032-564-7555</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">빛안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 588, 404호 (연희동, 청라센트럴프라자)</td>
+          <td>032-567-7544</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDYjJDgz/" class="hosp-link">서구푸른세상안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 364-1, 5층 (가정동, 창대빌딩)</td>
+          <td>584-0006</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">서울안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 293, 4층 (심곡동, 우민빌딩)</td>
+          <td>032-562-0111</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">소망안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 363, (신현동)</td>
+          <td>032-571-1559</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">아이빛안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 7층 706, 707, 709호 (원당동)</td>
+          <td>032-566-7577</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDQjJDgz/" class="hosp-link">인천신세계안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 4층 401~406호 (원당동)</td>
+          <td>032-716-9559</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">인천퍼스트안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음1로 377, 검단 눈담봄 101 5층 (원당동)</td>
+          <td>032-562-3888</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">참밝은안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 179, 3층 (왕길동, 마전메디칼)</td>
+          <td>569-0088</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDYjJDgz/" class="hosp-link">청라밝은의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 71, 506호 (연희동, 진영메디피아)</td>
+          <td>561-2804</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">청라베스트안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 청라비전프라자 203, 204, 205호 (청라동)</td>
+          <td>032-288-1200</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">검단항외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 36, 4층 401~404호 (원당동)</td>
+          <td>032-565-7500</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">소유외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 610, 603,604호 (청라동)</td>
+          <td>032-292-1000</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">연세유쾌항외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라루비로 93, 루비타워 203,204호 (청라동)</td>
+          <td>032-721-5585</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">검단연세이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 604, 605, 606호 (원당동)</td>
+          <td>032-567-9800</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">다인이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 100, (가좌동)</td>
+          <td>575-0614</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">두리이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 60, JS프라자 (원당동)</td>
+          <td>032-715-4600</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDIjJDgz/" class="hosp-link">리더스이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 451, 벨라미센텀시티 530,534~545,547호 (가정동)</td>
+          <td>032-205-5959</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">연세이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원적로 85, 304호 (가좌동, 우신프라자)</td>
+          <td>032-579-5284</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">참이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 293, (심곡동)</td>
+          <td>564-0034</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">청라준이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 서구 푸른로 3, (경서동)</td>
+          <td>032-582-5252</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">의료법인 정강의료재단 검단수한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>재활의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 147, 유영빌딩 3~10층, 12층 (왕길동)</td>
+          <td>032-713-5300</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">인천탑한방병원</a><br>
+          <span style="color:#888;font-size:.78rem">한방병원</span></td>
+          <td>재활의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로19번길 13, 2~3층 (당하동)</td>
+          <td>032-563-1075</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDAjJDgz/" class="hosp-link">블레스병원</a><br>
+          <span style="color:#888;font-size:.78rem">정신병원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청마로167번안길 17, 선혜프라자 2~5층 (당하동)</td>
+          <td>563-1175</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">루원마음봄 정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 봉오대로 255, 6층 605,606호 (가정동)</td>
+          <td>032-569-7585</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDYjJDgz/" class="hosp-link">마음안 정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 660, 영프라자 5층 503호 (당하동)</td>
+          <td>032-565-6002</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">마음힐링의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 36, 더원타워 6층 604, 605호 일부호 (원당동)</td>
+          <td>032-567-5252</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">맑은마음의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 7층 701~707호 (원당동)</td>
+          <td>032-266-3131</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">박성용 정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로260번길 11, 진성프라자 308,309호 (청라동)</td>
+          <td>032-710-5253</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">부모와아이마음의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 65, 402호 (청라동, 라임타워)</td>
+          <td>032-562-5248</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">성모사과나무정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 384, 서영아너시티플러스 320~324호 (원당동)</td>
+          <td>032-564-9949</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">소중해정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 607, 608호 (원당동)</td>
+          <td>032-710-3535</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">아름드리정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 172, 406호 (마전동)</td>
+          <td>032-568-7559</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">이유정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 610, 마루힐프라자 5층 508호 (청라동)</td>
+          <td>032-561-0026</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDIjJDgz/" class="hosp-link">청라담담정신건강의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정신건강의학과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 청라비전프라자 501호 (청라동)</td>
+          <td>032-567-7222</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">연세제일정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 287-1, (석남동)</td>
+          <td>032-573-9100</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">청라우리정형외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>정형외과</td>
+          <td style="font-size:.82rem">인천광역시 서구 크리스탈로74번길 31, 월드프라자 2층 201~4호 (청라동)</td>
+          <td>032-777-7582</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNzEjJDEjJDgjJDgz/" class="hosp-link">검단 닥터에버스의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 1035, 라페온2차 4층 401~405호 (원당동)</td>
+          <td>032-724-8101</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDAjJDgz/" class="hosp-link">더율피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 588, 청라센트럴프라자 406,407호 (청라동)</td>
+          <td>032-225-2223</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">데일리의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 솔빛로 20, 도영프라자 (청라동)</td>
+          <td>032-567-5430</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDIjJDgz/" class="hosp-link">리나메르의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 원당대로 1029, 검단 라페온빌 1차 201~205호 (원당동)</td>
+          <td>032-721-6221</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">뮤즈의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 388, ABM타워 4층 401~405호 (원당동)</td>
+          <td>032-282-1681</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">미엘피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 가정로 375, 403,404호 (신현동, 금강아미움)</td>
+          <td>032-572-7111</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">서울더본피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로586번길 9-4, 쓰리엠타워 405,406호 (청라동)</td>
+          <td>032-710-0075</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">성모사랑미의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 완정로 179, 305,306호 (왕길동)</td>
+          <td>569-2525</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MjIjNTEjJDEjJDIjJDgz/" class="hosp-link">손한나의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 검단로 469, 6층 (왕길동)</td>
+          <td>563-3113</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">연세뉴피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로288번길 10, 더스페이스타워 4층 405호 (청라동)</td>
+          <td>032-562-0712</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDIjJDgz/" class="hosp-link">오라클피부과의원 인천아라점</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 392, 메트로시티 5층 505~507호 (원당동)</td>
+          <td>032-566-5595</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">유앤아이의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음1로 377, 검단 눈담봄 101 3층 301~303, 306~311호 (원당동)</td>
+          <td>032-716-6033</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">이너스피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 서곶로 281, 3층 (심곡동)</td>
+          <td>032-262-1777</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDYjJDgz/" class="hosp-link">인천검단 리멤버피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 378, 로뎀타워 803~806호 (원당동)</td>
+          <td>032-710-7574</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">인천검단 스노우의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음5로 36, 5층 504~509호 (원당동)</td>
+          <td>032-566-3355</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">인천검단점 헤브피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 이음대로 384, 서영아너시티플러스 604~610호 (원당동)</td>
+          <td>032-279-1004</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">청라브이의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라커낼로260번길 7-11, 청라퍼스트타워 204~207호 (청라동)</td>
+          <td>032-567-8258</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">클린업피부과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 610, 403~405호 (청라동)</td>
+          <td>032-569-7590</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">파크뷰의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 청라라임로 65, 401,406~408호 (연희동, 라임타워)</td>
+          <td>032-565-3300</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">휴먼피부과의원 청라점</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>피부과</td>
+          <td style="font-size:.82rem">인천광역시 서구 중봉대로 594, 청라비전프라자 303,401~405호 (청라동)</td>
+          <td>032-283-3335</td>
+          <td></td>
         </tr></tbody>
     </table>
   </div>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>인천 옹진군 병원 찾기 - 27개 병원 목록</title>
-<meta name="description" content="인천 옹진군 병원 목록 27곳. 주소, 전화번호, 진료시간 정보 제공.">
+<title>인천 옹진군 병원 찾기 - 5개 병원 목록</title>
+<meta name="description" content="인천 옹진군 병원 목록 5곳. 주소, 전화번호, 진료과목 정보 제공.">
 <link rel="canonical" href="https://kyouka69.github.io/incheon-hospital/region/옹진군/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@ header nav a:hover { opacity: 1; }
 .dept-btn { background: #fff; border-radius: 10px; padding: 14px 10px; text-align: center; font-size: .9rem; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
 .dept-btn:hover { background: #1a73e8; color: #fff; transform: translateY(-2px); }
 .region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
-.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; display: block; }
 .region-btn:hover { background: #e8f0fe; }
 .region-btn h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
 .region-btn p { font-size: .78rem; color: #888; }
@@ -45,12 +45,23 @@ th { background: #1a73e8; color: #fff; padding: 12px 10px; font-size: .88rem; te
 td { padding: 10px; font-size: .85rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #f8f9ff; }
+.hosp-link { color: #1a73e8; font-weight: 600; }
+.hosp-link:hover { text-decoration: underline; }
 .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
 .badge.open { background: #e6f4ea; color: #137333; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 20px; }
 .breadcrumb a { color: #1a73e8; }
 .breadcrumb span { margin: 0 6px; }
 .info-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; padding: 14px 16px; font-size: .85rem; color: #664d03; margin: 20px 0; }
+.detail-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.09); padding: 28px; margin-bottom: 20px; }
+.detail-card h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.detail-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+.detail-info-item label { font-size: .78rem; color: #888; display: block; margin-bottom: 4px; }
+.detail-info-item span { font-size: .95rem; font-weight: 600; }
+.map-wrap { width: 100%; height: 300px; border-radius: 12px; overflow: hidden; background: #e8f0fe; margin-top: 20px; display: flex; align-items: center; justify-content: center; }
+.dept-tag { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 4px 12px; font-size: .82rem; font-weight: 600; margin: 3px; }
+.tel-btn { display: inline-block; background: #1a73e8; color: #fff; border-radius: 30px; padding: 10px 24px; font-weight: 700; font-size: .95rem; margin-top: 12px; }
+.tel-btn:hover { background: #1557b0; }
 footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: .82rem; margin-top: 60px; }
 footer a { color: #ccc; margin: 0 8px; }
 .count-badge { font-size: .78rem; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 8px; margin-left: 6px; font-weight: 600; }
@@ -58,6 +69,7 @@ footer a { color: #ccc; margin: 0 8px; }
   .hero h1 { font-size: 1.5rem; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   header nav { display: none; }
+  .detail-info { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -76,172 +88,44 @@ footer a { color: #ccc; margin: 0 8px; }
 <div class="container" style="padding-top:30px">
   <div class="breadcrumb"><a href="/incheon-hospital/">홈</a><span>›</span><a href="/incheon-hospital/region/">지역별</a><span>›</span>옹진군</div>
   <div class="section">
-    <h2>인천 옹진군 병원 목록 <span class="count-badge">27개</span></h2>
-    <div class="info-box">총 27개 병원. 진료시간은 변경될 수 있으니 방문 전 확인하세요.</div>
-    <table>
+    <h2>인천 옹진군 병원 목록 <span class="count-badge">5개</span></h2>
+    <div class="info-box">총 5개 병원. 병원명을 클릭하면 상세정보를 확인할 수 있습니다.</div><table>
       <thead><tr><th>병원명</th><th>진료과</th><th>주소</th><th>전화번호</th><th>토/일</th></tr></thead>
       <tbody><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDgjJDgz/" class="hosp-link">하나의료조합 영흥우리의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
+          <td style="font-size:.82rem">인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
           <td>032-886-9411</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인천광역시의료원백령병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">인천광역시의료원백령병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>내과</td>
-          <td>인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
+          <td style="font-size:.82rem">인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
           <td>032-836-1731</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>공룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNzEjJDEjJDgjJDgz/" class="hosp-link">공룡의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
+          <td style="font-size:.82rem">인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
           <td>032-830-3169</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">흑룡의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
+          <td style="font-size:.82rem">인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
           <td>032-837-6873</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>장봉보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">장봉보건지소</a><br>
+          <span style="color:#888;font-size:.78rem">보건지소</span></td>
           <td>내과</td>
-          <td>인천광역시 옹진군 북도면 장봉로 554, (북도면장봉출장소)</td>
+          <td style="font-size:.82rem">인천광역시 옹진군 북도면 장봉로 554, (북도면장봉출장소)</td>
           <td>032-899-3391</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천광역시의료원백령병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
-          <td>032-836-1731</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>공룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
-          <td>032-830-3169</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
-          <td>032-837-6873</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천광역시의료원백령병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>산부인과</td>
-          <td>인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
-          <td>032-836-1731</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천광역시의료원백령병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
-          <td>032-836-1731</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>안과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
-          <td>032-837-6873</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>공룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>외과</td>
-          <td>인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
-          <td>032-830-3169</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>외과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
-          <td>032-837-6873</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
-          <td>032-837-6873</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>공룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정신건강의학과</td>
-          <td>인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
-          <td>032-830-3169</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인천광역시의료원백령병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 옹진군 백령면 백령로 233, 인천광역시의료원 백령병원</td>
-          <td>032-836-1731</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>공룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 옹진군 연평면 연평로137번길 47-8, 사서함202호</td>
-          <td>032-830-3169</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>흑룡의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 옹진군 백령면 백령로 831, (백령면)</td>
-          <td>032-837-6873</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>하나의료조합 영흥우리의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 옹진군 영흥면 영흥로176번길 8, 영흥늘푸른센터</td>
-          <td>032-886-9411</td>
-          <td><br></td>
+          <td></td>
         </tr></tbody>
     </table>
   </div>

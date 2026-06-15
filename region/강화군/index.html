@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>인천 강화군 병원 찾기 - 171개 병원 목록</title>
-<meta name="description" content="인천 강화군 병원 목록 171곳. 주소, 전화번호, 진료시간 정보 제공.">
+<title>인천 강화군 병원 찾기 - 27개 병원 목록</title>
+<meta name="description" content="인천 강화군 병원 목록 27곳. 주소, 전화번호, 진료과목 정보 제공.">
 <link rel="canonical" href="https://kyouka69.github.io/incheon-hospital/region/강화군/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -36,7 +36,7 @@ header nav a:hover { opacity: 1; }
 .dept-btn { background: #fff; border-radius: 10px; padding: 14px 10px; text-align: center; font-size: .9rem; font-weight: 600; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
 .dept-btn:hover { background: #1a73e8; color: #fff; transform: translateY(-2px); }
 .region-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 10px; }
-.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; }
+.region-btn { background: #fff; border-radius: 10px; padding: 16px 12px; box-shadow: 0 2px 6px rgba(0,0,0,.07); transition: all .15s; display: block; }
 .region-btn:hover { background: #e8f0fe; }
 .region-btn h4 { font-size: .95rem; font-weight: 700; margin-bottom: 4px; }
 .region-btn p { font-size: .78rem; color: #888; }
@@ -45,12 +45,23 @@ th { background: #1a73e8; color: #fff; padding: 12px 10px; font-size: .88rem; te
 td { padding: 10px; font-size: .85rem; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: #f8f9ff; }
+.hosp-link { color: #1a73e8; font-weight: 600; }
+.hosp-link:hover { text-decoration: underline; }
 .badge { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 10px; font-size: .75rem; font-weight: 600; }
 .badge.open { background: #e6f4ea; color: #137333; }
 .breadcrumb { font-size: .85rem; color: #888; margin-bottom: 20px; }
 .breadcrumb a { color: #1a73e8; }
 .breadcrumb span { margin: 0 6px; }
 .info-box { background: #fff3cd; border-left: 4px solid #ffc107; border-radius: 8px; padding: 14px 16px; font-size: .85rem; color: #664d03; margin: 20px 0; }
+.detail-card { background: #fff; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,.09); padding: 28px; margin-bottom: 20px; }
+.detail-card h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.detail-info { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px; }
+.detail-info-item label { font-size: .78rem; color: #888; display: block; margin-bottom: 4px; }
+.detail-info-item span { font-size: .95rem; font-weight: 600; }
+.map-wrap { width: 100%; height: 300px; border-radius: 12px; overflow: hidden; background: #e8f0fe; margin-top: 20px; display: flex; align-items: center; justify-content: center; }
+.dept-tag { display: inline-block; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 4px 12px; font-size: .82rem; font-weight: 600; margin: 3px; }
+.tel-btn { display: inline-block; background: #1a73e8; color: #fff; border-radius: 30px; padding: 10px 24px; font-weight: 700; font-size: .95rem; margin-top: 12px; }
+.tel-btn:hover { background: #1557b0; }
 footer { background: #1a1a2e; color: #aaa; text-align: center; padding: 30px 20px; font-size: .82rem; margin-top: 60px; }
 footer a { color: #ccc; margin: 0 8px; }
 .count-badge { font-size: .78rem; background: #e8f0fe; color: #1a73e8; border-radius: 20px; padding: 2px 8px; margin-left: 6px; font-weight: 600; }
@@ -58,6 +69,7 @@ footer a { color: #ccc; margin: 0 8px; }
   .hero h1 { font-size: 1.5rem; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   header nav { display: none; }
+  .detail-info { grid-template-columns: 1fr; }
 }
 </style>
 </head>
@@ -76,1036 +88,198 @@ footer a { color: #ccc; margin: 0 8px; }
 <div class="container" style="padding-top:30px">
   <div class="breadcrumb"><a href="/incheon-hospital/">홈</a><span>›</span><a href="/incheon-hospital/region/">지역별</a><span>›</span>강화군</div>
   <div class="section">
-    <h2>인천 강화군 병원 목록 <span class="count-badge">171개</span></h2>
-    <div class="info-box">총 171개 병원. 진료시간은 변경될 수 있으니 방문 전 확인하세요.</div>
-    <table>
+    <h2>인천 강화군 병원 목록 <span class="count-badge">27개</span></h2>
+    <div class="info-box">총 27개 병원. 병원명을 클릭하면 상세정보를 확인할 수 있습니다.</div><table>
       <thead><tr><th>병원명</th><th>진료과</th><th>주소</th><th>전화번호</th><th>토/일</th></tr></thead>
       <tbody><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">비에스종합병원</a><br>
+          <span style="color:#888;font-size:.78rem">종합병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 충렬사로 31-0,</td>
           <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
-          <td>032-934-1191</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>마음튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, 성용프라자 3층</td>
           <td></td>
-          <td><br></td>
         </tr><tr>
-          <td><strong>에바다의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">의료법인해인강화병원</a><br>
+          <span style="color:#888;font-size:.78rem">병원</span></td>
           <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 25, 25</td>
-          <td>033-933-0059</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>가정의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>결핵과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>결핵과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
           <td>930-8146</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">강화요양병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
           <td>032-937-0639</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">의료법인우진의료재단한길병원</a><br>
+          <span style="color:#888;font-size:.78rem">요양병원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
           <td>032-934-1191</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjODEjJDEjJDYjJDgz/" class="hosp-link">마음튼튼의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 27, 성용프라자 3층</td>
+          <td></td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNzEjJDEjJDgjJDgz/" class="hosp-link">에바다의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 25, 25</td>
+          <td>033-933-0059</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">인성의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
+          <td>932-4455</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDQjJDgz/" class="hosp-link">큰나무 의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 9, 9</td>
+          <td>032-233-7588</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">볼음보건지소</a><br>
+          <span style="color:#888;font-size:.78rem">보건지소</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
+          <td>932-7104</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/ODEjNjEjJDEjJDQjJDgz/" class="hosp-link">주문보건지소</a><br>
+          <span style="color:#888;font-size:.78rem">보건지소</span></td>
+          <td>가정의학과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
+          <td>930-3549</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">길상의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
+          <td style="font-size:.82rem">인천광역시 강화군 길상면 온수길 23, 2층</td>
           <td>032-937-5105</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>남궁내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDgjJDgz/" class="hosp-link">남궁내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 422, (강화읍)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 422, (강화읍)</td>
           <td>934-2142</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>드림 소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 동문안길 9-1, (강화읍)</td>
-          <td>934-1175</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>마음튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, 성용프라자 3층</td>
           <td></td>
-          <td><br></td>
         </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNTEjJDEjJDIjJDgz/" class="hosp-link">드림 소아청소년과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 동문안길 9-1, (강화읍)</td>
+          <td>934-1175</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDYjJDgz/" class="hosp-link">본 의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>내과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
           <td>933-8765</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>에바다의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MjIjNDEjJDEjJDQjJDgz/" class="hosp-link">온수의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 25, 25</td>
-          <td>033-933-0059</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>온수의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 길상면 온수길36번길 2, (길상면)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 길상면 온수길36번길 2, (길상면)</td>
           <td>032-937-6835</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNTEjJDEjJDIjJDgz/" class="hosp-link">임성식 내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
           <td>932-3375</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>제일성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjODEjJDEjJDYjJDgz/" class="hosp-link">제일성모의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, (강화읍)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 27, (강화읍)</td>
           <td>934-7576</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>중앙의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNTEjJDEjJDYjJDgz/" class="hosp-link">중앙의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 412, (강화읍)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 412, (강화읍)</td>
           <td>933-2678</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">현대내과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>내과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>현대내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 410, (정프라자)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 410, (정프라자)</td>
           <td>934-4007</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>내과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDgjJDgz/" class="hosp-link">강화튼튼신경외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>마취통증의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화튼튼신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 387, 이레빌딩(2층일부~3층전부)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 387, 이레빌딩(2층일부~3층전부)</td>
           <td>032-934-8845</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjODEjJDEjJDYjJDgz/" class="hosp-link">임용철마취통증의학과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>마취통증의학과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임용철마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 5층 502호 (준프라자빌딩)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 395, 5층 502호 (준프라자빌딩)</td>
           <td>032-932-2486</td>
-          <td><br></td>
+          <td></td>
         </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>마취통증의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>방사선종양학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>방사선종양학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>병리과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>병리과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
-          <td>032-934-1191</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>비뇨의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/ODEjNDEjJDEjJDgjJDgz/" class="hosp-link">유여성 의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>산부인과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>에바다의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>산부인과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 25, 25</td>
-          <td>033-933-0059</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>유여성 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>산부인과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 410, 302호</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 410, 302호</td>
           <td>933-6080</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>산부인과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>산부인과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>성형외과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>성형외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>성형외과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>성형외과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>드림 소아청소년과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 동문안길 9-1, (강화읍)</td>
-          <td>934-1175</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>에바다의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 25, 25</td>
-          <td>033-933-0059</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>제일성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, (강화읍)</td>
-          <td>934-7576</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>소아청소년과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
-          <td>032-934-1191</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>마음튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, 성용프라자 3층</td>
           <td></td>
-          <td><br></td>
         </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>신경과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
+          <td><a href="/incheon-hospital/hospital/MDIjNjEjJDEjJDAjJDgz/" class="hosp-link">강화신경외과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
           <td>신경외과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 45, (강화읍)</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 45, (강화읍)</td>
           <td>032-934-2774</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화튼튼신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 387, 이레빌딩(2층일부~3층전부)</td>
-          <td>032-934-8845</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>신경외과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>심장혈관흉부외과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화연세안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (강화읍)</td>
-          <td>934-7573</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>유안과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 412-1, (강화읍)</td>
-          <td>934-2164</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>안과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>영상의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>예방의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>예방의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
-          <td>032-934-1191</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>제일성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, (강화읍)</td>
-          <td>934-7576</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>외과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>응급의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>응급의학과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>응급의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>응급의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인우진의료재단한길병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 송해면 강화대로 902, (송해면)</td>
-          <td>032-934-1191</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>수이비인후과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 402, (강화읍)</td>
-          <td>933-7503</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>이비인후과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화튼튼신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 387, 이레빌딩(2층일부~3층전부)</td>
-          <td>032-934-8845</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임용철마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 5층 502호 (준프라자빌딩)</td>
-          <td>032-932-2486</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>재활의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>해주병원</strong><br><span style="color:#888;font-size:.78rem">정신병원</span></td>
-          <td>정신건강의학과</td>
-          <td>인천광역시 강화군 하점면 창후로 286, (하점면)</td>
-          <td>032-933-7114</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>마음튼튼의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정신건강의학과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, 성용프라자 3층</td>
           <td></td>
-          <td><br></td>
         </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
+          <td><a href="/incheon-hospital/hospital/MzIjNDEjJDEjJDgjJDgz/" class="hosp-link">강화연세안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 중앙로 23, (강화읍)</td>
+          <td>934-7573</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjODEjJDEjJDIjJDgz/" class="hosp-link">유안과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>안과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 412-1, (강화읍)</td>
+          <td>934-2164</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MDIjNDEjJDEjJDQjJDgz/" class="hosp-link">수이비인후과의원</a><br>
+          <span style="color:#888;font-size:.78rem">의원</span></td>
+          <td>이비인후과</td>
+          <td style="font-size:.82rem">인천광역시 강화군 강화읍 강화대로 402, (강화읍)</td>
+          <td>933-7503</td>
+          <td></td>
+        </tr><tr>
+          <td><a href="/incheon-hospital/hospital/MzIjNjEjJDEjJDQjJDgz/" class="hosp-link">해주병원</a><br>
+          <span style="color:#888;font-size:.78rem">정신병원</span></td>
           <td>정신건강의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>정신건강의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>정신건강의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>의료법인해인강화병원</strong><br><span style="color:#888;font-size:.78rem">병원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로312번길 11, (강화읍)</td>
-          <td>930-8146</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화튼튼신경외과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 387, 이레빌딩(2층일부~3층전부)</td>
-          <td>032-934-8845</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임용철마취통증의학과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 5층 502호 (준프라자빌딩)</td>
-          <td>032-932-2486</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>제일성모의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 27, (강화읍)</td>
-          <td>934-7576</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>정형외과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>직업환경의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>직업환경의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>비에스종합병원</strong><br><span style="color:#888;font-size:.78rem">종합병원</span></td>
-          <td>진단검사의학과</td>
-          <td>인천광역시 강화군 강화읍 충렬사로 31-0,</td>
-          <td>032-290-0001</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>진단검사의학과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>진단검사의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>진단검사의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>강화요양병원</strong><br><span style="color:#888;font-size:.78rem">요양병원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 길상면 강화동로 181, (길상면)</td>
-          <td>032-937-0639</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>길상의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 길상면 온수길 23, 2층</td>
-          <td>032-937-5105</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>본 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, (준프라자빌딩)</td>
-          <td>933-8765</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>인성의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 23, (인성의원)</td>
-          <td>932-4455</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>임성식 내과의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 강화읍 강화대로 395, 준프라자 빌딩 3층</td>
-          <td>932-3375</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>큰나무 의원</strong><br><span style="color:#888;font-size:.78rem">의원</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 강화읍 중앙로 9, 9</td>
-          <td>032-233-7588</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>피부과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>볼음보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>핵의학과</td>
-          <td>인천광역시 강화군 서도면 볼음도길 174, 볼음보건지소</td>
-          <td>932-7104</td>
-          <td><br></td>
-        </tr><tr>
-          <td><strong>주문보건지소</strong><br><span style="color:#888;font-size:.78rem">보건지소</span></td>
-          <td>핵의학과</td>
-          <td>인천광역시 강화군 서도면 주문도1길6번길 7-1, (서도면)</td>
-          <td>930-3549</td>
-          <td><br></td>
+          <td style="font-size:.82rem">인천광역시 강화군 하점면 창후로 286, (하점면)</td>
+          <td>032-933-7114</td>
+          <td></td>
         </tr></tbody>
     </table>
   </div>
