@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://incheon-hospital.showinfo.shop/sitemap.xml
